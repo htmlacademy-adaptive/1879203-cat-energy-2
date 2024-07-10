@@ -11,61 +11,64 @@
 
 <body class="page__body">
 
-  <header class="main-header">
-    <a class="main-header__logo logo link" href="index.html">
-      <img src="../../" alt="логотип магазина Cat Energy." width="33" height="38">
-      <svg class="logo logo--svg" width="128" height="24"></svg></a>
-    <nav class="main-header__nav nav">
-      <div class="nav__container">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link link link--current" href="#">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-      <button class="nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </nav>
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__logo link-reset" href="index.html">
+        <img src="../../" alt="логотип магазина Cat Energy." width="33" height="38">
+        <svg class="logo logo--svg" width="128" height="24"></svg>
+      </a>
+      <navigation class="navigationigation">
+        <div class="navigationigation__container">
+          <ul class="navigationigation__list list-reset">
+            <li class="navigation__item">
+              <a class="navigation__link link-reset link--current" href="#">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link-reset" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link-reset" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+        <button class="navigation__toggle button-reset button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </navigation>
+    </div>
   </header>
 
-  <main class="main main-container">
+  <main class="main">
 
     <section class="hero">
-      <div class="hero__container container">
-        <h1 class="hero__title title">Функциональное питание для котов</h1>
+      <div class="container">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
-        <img class="hero__img" src="../." alt="пример дизайна еды Cat Energy" width="270" height="280">
-        <a class="link--main link" href="#">подобрать программу</a>
+        <img class="hero__img" src="../." alt="Cat Energy" width="270" height="280">
+        <a class="link--main link-reset" href="#">подобрать программу</a>
       </div>
     </section>
 
     <section class="programs">
-      <div class="programs__container container">
+      <div class="container">
         <h2 class="visually-hidden">Программы питания для ваших котиков</h2>
-        <ul class="programs__list">
+        <ul class="programs__list list-reset">
           <li class="programs__item icon icon--slim">
             <h2 class="programs__title">Похудение</h2>
             <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link link" href="#">каталог slim</a>
+            <a class="programs__link link-reset" href="#">каталог slim</a>
           </li>
           <li class="programs__item icon icon--fat">
             <h2 class="programs__title">Набор массы</h2>
             <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link link" href="#">каталог pro</a>
+            <a class="programs__link link-reset" href="#">каталог pro</a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="benefits">
-      <div class="benefits__container container">
+      <div class="container">
         <h2 class="benefits__title">Как это работает</h2>
-        <ul class="benefits__list">
+        <ul class="benefits__list list-reset">
           <li class="benefits__item icon icon--leaf">
             <p class="benefits__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
@@ -83,41 +86,45 @@
     </section>
 
     <section class="info">
-      <div class="info__container container">
+      <div class="container">
         <h2 class="info__title">Живой пример</h2>
         <p class="info__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <ul class="info__list">
-          <li class="info__item">
-            <div class="info__example example"><span class="example__detail example-detail example-detail--title">5 кг</span><span class="example__detail detail detail--text">снижение веса</span></div>
-          </li>
-          <li class="info__item">
-            <div class="info__example example"><span class="example__detail example-detail example-detail--title">60 дней</span><span class="example__detail detail detail--text">затрачено времени</span></div>
-          </li>
-        </ul>
-        <p class="info__sum">Затраты на питание: 15 000 РУБ.</p>
+
+        <dl class="info__list">
+          <div class="info__item">
+            <dt class="info__example"><span class="info__example__title">5 кг</span></dt>
+            <dd class="info__detail"><span class="info__example__description">снижение веса</span></dd>
+          </div>
+          <div class="info__item">
+            <dt class="info__example"><span class="info__example__title">60 дней</span></dt>
+            <dd class="info__detail"><span class="info__example__description">затрачено времени</span></dd>
+          </div>
+        </dl>
+        <p class="info__result">Затраты на питание: 15 000 РУБ.</p>
         <img class="info__img" src="../" alt="Фотография результатов работы нашего корма" width="280" height="256">
       </div>
     </section>
 
     <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
-      <img class="map__img" src="../" alt="Карта" width="320" height="362">
-      <div class="invitation invitation__container container">
-        <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="invitation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="container">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="invitation">
+          <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="invitation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
     </section>
 
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__link link" href="#"><img class="logo" src="../" alt="логотип магазина Cat Energy." width="128" height="24"></a>
-      <ul class="social social__list">
-        <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden">ссылка на наш ВК</span></a></li>
-        <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden">ссылка на наш ютуб</span></a></li>
-        <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden">ссылка на наш телеграм</span></a></li>
+      <a class="footer__link link-reset" href="#"><img class="logo" src="../" alt="логотип магазина Cat Energy." width="128" height="24"></a>
+      <ul class="social list-reset">
+        <li class="social__item social__item--vk"><a class="social__link" href="#"><span class="visually-hidden">ссылка на наш ВК</span></a></li>
+        <li class="social__item social__item--youtube"><a class="social__link" href="#"><span class="visually-hidden">ссылка на наш ютуб</span></a></li>
+        <li class="social__item social__item--telegram"><a class="social__link" href="#"><span class="visually-hidden">ссылка на наш телеграм</span></a></li>
       </ul>
-      <a class="footer__link link" href="#"><span class="copyright_text">HTML Academy</span><svg width="12" height="10"></svg></a>
+      <a class="footer__link link-reset" href="#"><span class="copyright_text">HTML Academy</span><svg width="12" height="10"></svg></a>
     </div>
   </footer>
 </body>

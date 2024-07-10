@@ -7,5 +7,5 @@
     └── scripts/
         ├── index.js
         ├── modal.js
-        └── nav.js
+        └── navigation.js
 ```
