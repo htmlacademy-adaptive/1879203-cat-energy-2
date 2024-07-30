@@ -1,0 +1,9 @@
+.banner {
+  background-color: $bg-basic-green;
+
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+}

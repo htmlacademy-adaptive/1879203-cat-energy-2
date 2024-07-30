@@ -7,52 +7,40 @@
 
 body {
   font-family: "Lato", sans-serif;
+  color: $base-text-color; //#444444 = special-dark-grey;
+  padding: 0;
+  margin: 0;
 }
 
-// .button-reset {
-//   all: unset;
-//   cursor: pointer;
-// }
+.button-reset {
+  all: unset;
+  cursor: pointer;
+}
 
+.link-reset {
+  color: #000000;
+  // color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  font-style: normal;
+  cursor: pointer;
+}
 
-// .link-reset {
-//   color: inherit;
-//   text-decoration: none;
-//   background-color: transparent;
-//   font-style: normal;
-//   cursor: pointer;
-// }
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-// .list-reset {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// .visually-hidden {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   border: 0;
-//   padding: 0;
-//   white-space: nowrap;
-//   clip-path: inset(100%);
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
-
-
-// .container {
-
-// }
-
-
-// .link {
-
-// }
-
-// .icon {
-
-// }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

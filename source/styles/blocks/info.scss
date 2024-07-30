@@ -1,0 +1,23 @@
+.info {
+  background-color: #eaeaea;
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__result {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}

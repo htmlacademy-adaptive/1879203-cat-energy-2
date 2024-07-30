@@ -1,0 +1,14 @@
+.main-card {
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+    // text-align: center;
+  }
+
+  &__details {
+    color: $base-text-color;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
