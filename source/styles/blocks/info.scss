@@ -1,16 +1,33 @@
 .info {
+  padding: 20px;
   background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   &__title {
     font-family: "Oswald", sans-serif;
     font-size: 36px;
     line-height: 40px;
     color: #000000;
+    margin-bottom: 40px;
   }
 
   &__text {
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__item {
+    background-image: url(../../icons/stack.svg#icon-weight-back);
+    margin-bottom: 20px;
   }
 
   &__result {
@@ -19,5 +36,7 @@
     line-height: 20px;
     color: #000000;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }

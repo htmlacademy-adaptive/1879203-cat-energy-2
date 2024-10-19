@@ -1,6 +1,27 @@
 .programs {
+  padding: 20px;
+
   &__item {
     background-color: $basic-grey;
+    padding: 30px 33px 18px 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+  }
+
+  &__item--slim {
+    background-image: url(../../icons/stack.svg#icon-cat-slim);
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+    background-position: 20px 20px;
+  }
+
+  &__item--muscles {
+    background-image: url(../../icons/stack.svg#icon-cat-muscles);
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+    background-position: 20px 20px;
   }
 
   &__title {
@@ -8,6 +29,9 @@
     line-height: 37px;
     color: #000000;
     text-transform: uppercase;
+    margin-bottom: 29px;
+    margin-left: 80px;
+    font-family: "Oswald", sans-serif;
   }
 
   &__text {
@@ -15,6 +39,9 @@
     line-height: 18px;
     font-family: "Lato", sans-serif;
     // color: $base-text-color;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 15px;
   }
 
   &__link {
@@ -23,5 +50,12 @@
     line-height: 16px;
     color: #000000;
     text-transform: uppercase;
+    display: block;
+    width: 133px;
+    height: 24px;
+    background-image: url(../../icons/stack.svg#icon-arrow);
+    background-size: 24px 12px;
+    background-position: 105px 3px;
+    background-repeat: no-repeat;
   }
 }

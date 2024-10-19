@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  min-height: 30px;
+
+  &__item {
+    display: block;
+    background-image: url(../../icons/stack.svg#icon-vkontakte);
+    background-repeat: no-repeat;
+    background-size: 28px 22px;
+  }
+}

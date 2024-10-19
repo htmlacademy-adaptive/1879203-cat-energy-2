@@ -1,13 +1,43 @@
 .benefits {
+  padding: 0 20px 49px 20px;
+
   &__title {
     font-size: 36px;
     line-height: 40px;
     color: #000000;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    background-image: url(../../icons/stack.svg#icon-leaf);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: 0 -3px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 
   &__text {
-    font-family: "Lato", sans-serif;
+    margin-left: 80px;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  &__item--water {
+    background-image: url(../../icons/stack.svg#icon-water);
+  }
+
+  &__item--meal {
+    background-image: url(../../icons/stack.svg#icon-meal);
+  }
+
+  &__item--scales {
+    background-image: url(../../icons/stack.svg#icon-scales);
   }
 }

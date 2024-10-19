@@ -1,3 +1,15 @@
 .footer {
   background-color: $basic-grey;
+  padding: 40px 20px 47px 20px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
 }
