@@ -11,14 +11,14 @@
   }
 
   &__item--slim {
-    background-image: url(../../icons/stack.svg#icon-cat-slim);
+    background-image: url('../../icons/stack.svg#icon-cat-slim');
     background-repeat: no-repeat;
     background-size: 50px 53px;
     background-position: 20px 20px;
   }
 
   &__item--muscles {
-    background-image: url(../../icons/stack.svg#icon-cat-muscles);
+    background-image: url('../../icons/stack.svg#icon-cat-muscles');
     background-repeat: no-repeat;
     background-size: 67px 50px;
     background-position: 20px 20px;
@@ -53,7 +53,7 @@
     display: block;
     width: 133px;
     height: 24px;
-    background-image: url(../../icons/stack.svg#icon-arrow);
+    background-image: url('../../icons/stack.svg#icon-arrow');
     background-size: 24px 12px;
     background-position: 105px 3px;
     background-repeat: no-repeat;
