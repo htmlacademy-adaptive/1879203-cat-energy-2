@@ -1,8 +1,8 @@
 .social {
+
   display: flex;
   justify-content: center;
-  border-top: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
+  border-block: $border;;
   min-height: 30px;
 
   &__item {

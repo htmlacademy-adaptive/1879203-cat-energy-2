@@ -1,5 +1,5 @@
 .programs {
-  padding: 20px;
+  padding-block: 20px;
 
   &__item {
     background-color: $basic-grey;
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     margin-bottom: 29px;
     margin-left: 80px;
-    font-family: "Oswald", sans-serif;
+    font-family: $font-family-oswald;
   }
 
   &__text {
@@ -45,7 +45,7 @@
   }
 
   &__link {
-    font-family: "Oswald", sans-serif;
+    font-family: $font-family-oswald;
     font-size: 16px;
     line-height: 16px;
     color: #000000;

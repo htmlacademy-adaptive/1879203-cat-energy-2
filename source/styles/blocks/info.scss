@@ -1,12 +1,12 @@
 .info {
-  padding: 20px;
+  padding-block: 20px;
   background-color: #eaeaea;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   &__title {
-    font-family: "Oswald", sans-serif;
+    font-family: $font-family-oswald;
     font-size: 36px;
     line-height: 40px;
     color: #000000;
@@ -31,7 +31,7 @@
   }
 
   &__result {
-    font-family: "Oswald", sans-serif;
+    font-family: $font-family-oswald;
     font-size: 14px;
     line-height: 20px;
     color: #000000;

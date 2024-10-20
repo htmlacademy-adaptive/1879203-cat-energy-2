@@ -1,23 +1,20 @@
 .main-catalog {
+
   &__title {
-    font-family: "Oswald", sans-serif;
+    font-family: $font-family-oswald;
     font-size: 36px;
     line-height: 36px;
     color: #000000;
+    padding-block: 27px 41px;
+    padding-left: 20px;
+    border-bottom: $border-main-catalog;
+    border-top: $border;
   }
 
-  &__link {
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: $bg-basic-green;
+  &__link--show-more {
+    font-family: $font-family-oswald;
+    color: $base-text-color;
+    background-color: $basic-grey;
 
-    &--show-more {
-      font-family: "Oswald", sans-serif;
-      color: $base-text-color;
-      background-color: $basic-grey;
-    }
   }
 }
