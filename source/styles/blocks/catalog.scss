@@ -1,4 +1,4 @@
-.main-catalog {
+.catalog {
 
   &__title {
     font-family: $font-family-oswald;
@@ -7,7 +7,7 @@
     color: #000000;
     padding-block: 27px 41px;
     padding-left: 20px;
-    border-bottom: $border-main-catalog;
+    border-bottom: $border-catalog;
     border-top: $border;
   }
 }
