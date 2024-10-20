@@ -2,6 +2,8 @@
   border-top: 1px solid $special-grey;
   border-bottom: 1px solid $special-grey;
   padding-block: 13px 19px;
+  display: flex;
+  flex-direction: column;
 
   &__title {
     font-family: $font-family-oswald;

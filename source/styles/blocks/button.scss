@@ -1,5 +1,7 @@
 .button {
-  background-color: $bg-basic-green;
+  display: inline-flex;
+  width: 280px;
+  height: 40px;
 
   &--order {
     font-family: $font-family-oswald;
@@ -8,9 +10,6 @@
     color: #ffffff;
     text-transform: uppercase;
     background-color: $bg-basic-green;
-    display: inline-flex;
-    width: 280px;
-    height: 40px;
     align-items: center;
     justify-content: center;
   }
@@ -20,9 +19,6 @@
     color: $base-text-color;
     text-transform: uppercase;
     background-color: $basic-grey;
-    display: inline-flex;
-    width: 280px;
-    height: 40px;
     align-items: center;
     justify-content: center;
   }

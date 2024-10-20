@@ -5,12 +5,23 @@
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  @media (max-width: $mobile-width) {
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (width < $mobile-width) {
     padding: 13px 20px;
   }
 
+  @media screen and (width > $mobile-width) {
+    padding: 25px 34px 20px 30px;
+  }
+
   &__logo picture {
+    display: inline-block;
     margin-right: 56px;
   }
 }

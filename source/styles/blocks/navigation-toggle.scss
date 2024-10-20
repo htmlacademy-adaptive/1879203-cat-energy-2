@@ -1,0 +1,55 @@
+.navigation__toggle {
+  display: flex; // flex для отображения
+  position: relative;
+  z-index: 5;
+  align-items: center;
+  justify-content: flex-end;
+  width: 24px;
+  height: 16px;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    transition: all 0.2s ease 0s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &--span {
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #000000;
+  }
+
+// добавить класс active в navigation__toggle
+
+  &.active.navigation__toggle span {
+    transform: scale(0);
+  }
+
+  &.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+
+  &.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+  }
+
+  @media screen and (width > 576px) {
+    display: none;
+  }
+
+}
+

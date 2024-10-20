@@ -1,0 +1,10 @@
+.navigation {
+  display: flex;
+}
+.navigation__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
