@@ -1,25 +1,3 @@
 .button {
-  display: inline-flex;
-  width: 280px;
-  height: 40px;
 
-  &--order {
-    font-family: $font-family-oswald;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: $bg-basic-green;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &--show-more {
-    font-family: $font-family-oswald;
-    color: $base-text-color;
-    text-transform: uppercase;
-    background-color: $basic-grey;
-    align-items: center;
-    justify-content: center;
-  }
 }

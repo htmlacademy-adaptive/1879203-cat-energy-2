@@ -1,6 +1,3 @@
-@import "./common/variables.scss";
-
-
 .header {
   background-color: #ffffff;
   display: flex;
@@ -22,7 +19,6 @@
 
   &__logo picture {
     display: inline-block;
-    margin-right: 56px;
   }
 }
 

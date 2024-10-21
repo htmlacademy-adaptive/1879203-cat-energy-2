@@ -1,7 +1,11 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ebebeb;
   padding-block: 20px;
   padding-inline: 20px;
-  border-bottom: $border-catalog;
 
   &__title {
     max-width: 76px;
