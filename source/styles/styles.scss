@@ -5,6 +5,11 @@
 @import "./common/global.scss";
 
 /* BLOCKS */
+@import "./blocks/button-reset.scss";
+@import "./blocks/fieldset-reset.scss";
+@import "./blocks/link-reset.scss";
+@import "./blocks/list-reset.scss";
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/button.scss";
 @import "./blocks/container.scss";
 @import "./blocks/link.scss";
@@ -17,8 +22,8 @@
 @import "./blocks/hero.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/benefits.scss";
-@import "./blocks/info.scss";
 @import "./blocks/info-details.scss";
+@import "./blocks/info.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/map.scss";
 @import "./blocks/invitation.scss";
@@ -40,9 +45,5 @@
 @import "./blocks/card.scss";
 @import "./blocks/card-more.scss";
 @import "./blocks/navigation-toggle.scss";
-@import "./blocks/button-reset.scss";
-@import "./blocks/link-reset.scss";
-@import "./blocks/list-reset.scss";
-@import "./blocks/visually-hidden.scss";
 
 
