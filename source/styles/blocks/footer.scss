@@ -12,4 +12,15 @@
   &__logo {
     margin-bottom: 20px;
   }
+
+  &__link--copyright {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 100%;
+      text-wrap: nowrap;
+    }
+  }
 }

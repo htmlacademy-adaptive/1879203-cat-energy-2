@@ -4,11 +4,62 @@
   justify-content: center;
   border-block: $border;;
   min-height: 30px;
+  align-items: center;
+  padding-block: 20px;
+  margin-bottom: 20px;
 
   &__item {
+    width: 28px;
+    height: 22px;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__link {
     display: block;
-    background-image: url(../../icons/stack.svg#icon-vkontakte);
     background-repeat: no-repeat;
     background-size: 28px 22px;
+    transition: all 1s;
+  }
+
+  &__link--vk {
+    &::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 22px;
+      mask-image: url('../../icons/stack.svg#icon-vkontakte');
+      mask-size: 28px 22px;
+      mask-repeat: no-repeat;
+      background-color: #666666;
+    }
+  }
+
+  &__link--youtube {
+    &::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 22px;
+      mask-image: url('../../icons/stack.svg#icon-youtube');
+      mask-size: 28px 22px;
+      mask-repeat: no-repeat;
+      background-color: #666666;
+    }
+  }
+
+  &__link--telegram {
+    &::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 22px;
+      mask-image: url('../../icons/stack.svg#icon-telegram');
+      mask-size: 28px 22px;
+      mask-repeat: no-repeat;
+      background-color: #666666;
+    }
   }
 }

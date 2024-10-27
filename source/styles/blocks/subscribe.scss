@@ -1,0 +1,55 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    position: relative;
+    padding: 25px 20px 36px 0;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 94px;
+      height: 1px;
+      background-color: $bg-basic-green;
+      position: absolute;
+      top: 40px;
+      right: -20px;
+    }
+  }
+
+  &__text {
+    max-width: 280px;
+    font-family: $font-family-oswald;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 24px;
+  }
+
+  &__input {
+    margin-bottom: 16px;
+    width: 280px;
+    height: 56px;
+  }
+
+  &__button {
+    width: 280px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+}

@@ -1,3 +1,9 @@
 .button {
-
+  &--main {
+    font-family: $font-family-oswald;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: $bg-basic-green;
+    text-align: center;
+  }
 }
