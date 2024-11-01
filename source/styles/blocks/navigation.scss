@@ -3,7 +3,7 @@
 
 
   &__link {
-    font-family: "Oswald", sans-serif;
+    font-family: $font-family-oswald;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
@@ -58,12 +58,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      min-width: 436px;
     }
 
     &__link {
       padding-inline: 16px;
       display: inline-flex;
       text-align: center;
+    }
+  }
+
+  @media screen and (width > $desktop-width) {
+    &__list {
+      min-width: 475px;
     }
   }
 }

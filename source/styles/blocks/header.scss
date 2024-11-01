@@ -10,16 +10,25 @@
     align-items: center;
   }
 
-  @media screen and (width < $mobile-width) {
-    padding: 13px 20px;
+  &__logo picture {
+    display: inline-block;
   }
 
-  @media screen and (width > $mobile-width) {
+  @media screen and (width > $tablet-width) {
     padding: 25px 34px 20px 30px;
   }
 
-  &__logo picture {
-    display: inline-block;
+  @media screen and (width > $desktop-width) {
+    padding: 55px 110px 20px 110px;
+    justify-content: start;
+
+    &__logo picture {
+      margin-right: 14px;
+    }
+
+    &__logo--text {
+      margin-right: 543px;
+    }
   }
 }
 
