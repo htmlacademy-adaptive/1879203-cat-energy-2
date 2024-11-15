@@ -1,4 +1,14 @@
 .container {
   padding-inline: $container-padding-x;
-  // margin-inline: auto;
+
+  // @media screen and (width > $tablet-width) {
+  //   max-width: calc(100% - 60px);
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  @media screen and (width > $desktop-width) {
+      padding-inline: 110px;
+  }
 }
