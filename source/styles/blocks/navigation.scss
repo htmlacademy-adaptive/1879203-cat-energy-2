@@ -7,19 +7,6 @@
     align-items: center;
   }
 
-  @media screen and (width > $desktop-width) {
-    &::before {
-      content: '';
-      width: 720px;
-      height: 625px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url('../../images/hero-bg-desktop@1x.png');
-      z-index: 1;
-    }
-  }
-
   &__link {
     font-family: $font-family-oswald;
     font-size: 20px;
@@ -42,11 +29,11 @@
         height: 2px;
         background-color: $bg-basic-green;
       }
-    }
 
-    @media screen and (width > $desktop-width) {
-      z-index: 2;
-      color: #ffffff;
+      &--main-desktop {
+        z-index: 2;
+        color: #ffffff;
+      }
     }
   }
 

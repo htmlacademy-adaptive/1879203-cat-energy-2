@@ -17,6 +17,11 @@
     max-height: 200px;
   }
 
+  @media screen and (width > $desktop-width) {
+    max-width: 245px;
+    margin-bottom: 0;
+  }
+
   &__text {
     display: block;
     font-size: 16px;
@@ -28,6 +33,10 @@
 
     @media screen and (width > $tablet-width) {
       text-align: left;
+    }
+
+    @media screen and (width > $desktop-width) {
+      text-align: center;
     }
 
     &::before {
@@ -43,6 +52,11 @@
       @media screen and (width > $tablet-width) {
         top: -140px;
         left: -220px;
+      }
+
+      @media screen and (width > $desktop-width) {
+        top: -135px;
+        left: 35px;
       }
     }
   }

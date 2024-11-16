@@ -33,6 +33,11 @@
       top: 15px;
       right: -20px;
     }
+
+    @media screen and (width > $desktop-width) {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 
   &__text {

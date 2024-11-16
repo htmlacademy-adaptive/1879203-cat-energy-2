@@ -21,6 +21,18 @@
 
   @media screen and (width > $desktop-width) {
     margin-top: 80px;
+
+
+     &::before {
+       content: '';
+       width: 720px;
+       height: 625px;
+       position: absolute;
+       top: -210px;
+       right: 0;
+       background-image: url('../../images/hero-bg-desktop@1x.png');
+       z-index: 1;
+     }
     }
 
 

@@ -1,10 +1,19 @@
 .catalog-additional {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 
   @media screen and (width > $tablet-width) {
     align-items: normal;
+  }
+
+  &__wrapper {
+    @media screen and (width > $desktop-width) {
+      display: flex;
+      gap: 80px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
   }
 
   &__title {
@@ -29,6 +38,11 @@
     @media screen and (width > $tablet-width) {
       padding-bottom: 80px;
     }
+
+    @media screen and (width > $desktop-width) {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 
   &__list {
@@ -36,6 +50,11 @@
 
     @media screen and (width > $tablet-width) {
       border: 1px solid $special-grey;
+    }
+
+    @media screen and (width > $desktop-width) {
+      border: none;
+      max-width: 895px;
     }
   }
 
@@ -47,5 +66,9 @@
     text-transform: uppercase;
     background-color: $bg-basic-green;
     width: 100%;
+
+    @media screen and (width > $desktop-width) {
+      max-width: 244px;
+    }
   }
 }
