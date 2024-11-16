@@ -32,7 +32,6 @@
 
     @media screen and (width > $tablet-width) {
       align-items: flex-start;
-      max-height: 695px;
     }
   }
 
@@ -50,6 +49,7 @@
       line-height: 45px;
       display: block;
       margin-left: 120px;
+      padding-bottom: 40px;
     }
 
     @media screen and (width > $desktop-width) {
@@ -73,6 +73,8 @@
       line-height: 15px;
       display: block;
       margin-left: 120px;
+      padding-bottom: 50px;
+
     }
 
     @media screen and (width > $desktop-width) {
@@ -83,6 +85,7 @@
   &__link {
     @media screen and (width > $tablet-width) {
       width: 244px;
+      height: 54px;
       margin-left: 120px;
       position: absolute;
       top: 175px;
@@ -97,6 +100,7 @@
   }
 
   &__img {
+
     @media screen and (width > $desktop-width) {
       position: absolute;
       left: 425px;

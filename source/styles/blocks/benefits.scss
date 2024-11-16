@@ -1,6 +1,6 @@
 .benefits {
-  padding-top: 0;
-  padding-bottom: 49px;
+  margin-top: 0;
+  margin-bottom: 49px;
 
   &__title {
     font-size: 36px;
@@ -17,6 +17,10 @@
     @media screen and (width > $tablet-width) {
       grid-template-columns: 1fr 1fr;
       gap: 37px 135px;
+     }
+
+     @media screen and (width > $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
      }
   }
 
