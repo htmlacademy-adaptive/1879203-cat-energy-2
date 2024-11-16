@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
 
+  @media screen and (width > $tablet-width) {
+    align-items: normal;
+  }
+
   &__title {
     font-family: $font-family-oswald;
     font-size: 24px;
@@ -10,7 +14,6 @@
     color: #000000;
     position: relative;
     padding: 25px 20px 36px 0;
-
 
     &::after {
       content: '';
@@ -22,6 +25,18 @@
       top: 40px;
       right: 0;
     }
+
+    @media screen and (width > $tablet-width) {
+      padding-bottom: 80px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 30px;
+
+    @media screen and (width > $tablet-width) {
+      border: 1px solid $special-grey;
+    }
   }
 
   &__link {
@@ -32,6 +47,5 @@
     text-transform: uppercase;
     background-color: $bg-basic-green;
     width: 100%;
-
   }
 }

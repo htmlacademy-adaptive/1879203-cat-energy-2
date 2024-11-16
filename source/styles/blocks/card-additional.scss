@@ -1,24 +1,46 @@
 .card-additional {
   border-top: 1px solid $special-grey;
   border-bottom: 1px solid $special-grey;
-  padding-block: 13px 19px;
+  padding-block: 26px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (width > $tablet-width) {
+    border-top: none;
+    padding-bottom: 28px;
+    padding-inline: 38px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
 
   &__title {
     font-family: $font-family-oswald;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 16px;
     color: #222222;
     text-transform: uppercase;
     padding-bottom: 13px;
+
+    @media screen and (width > $tablet-width) {
+      margin-right: 245px;
+    }
   }
 
   &__details {
     font-size: 14px;
     line-height: 14px;
+    color: #444444;
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
+  }
+
+  &__package {
+    @media screen and (width > $tablet-width) {
+      margin-right: 25px;
+    }
   }
 }

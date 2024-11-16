@@ -20,6 +20,10 @@
 
   &__logo {
     margin-bottom: 20px;
+
+    @media screen and (width > $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__link--copyright {

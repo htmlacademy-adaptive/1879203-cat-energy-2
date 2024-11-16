@@ -4,22 +4,31 @@
   align-items: center;
   padding-top: 195px;
   background-color: $bg-basic-green;
-  background: linear-gradient(rgba(104, 183, 56, 0.85)), url('../../images/banner-bg@2x.png');
+  background-image: url('../../images/banner-bg@2x.png');
+  //background: linear-gradient(rgba(104, 183, 56, 0.85)), url('../../images/banner-bg@2x.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 290px;
+  width: 100%;
   min-height: 279px;
   margin-bottom: 40px;
+
+  @media screen and (width > $tablet-width) {
+    max-height: 200px;
+  }
 
   &__text {
     display: block;
     font-size: 16px;
     line-height: 20px;
-    color: #ffffff;
+    color: $basic-white;
     max-width: 161px;
     text-align: center;
     position: relative;
+
+    @media screen and (width > $tablet-width) {
+      text-align: left;
+    }
 
     &::before {
       content: '';
@@ -30,6 +39,11 @@
       top: -140px;
       left: 40px;
       background-image: url('../../icons/stack.svg#icon-gift');
+
+      @media screen and (width > $tablet-width) {
+        top: -140px;
+        left: -220px;
+      }
     }
   }
 }

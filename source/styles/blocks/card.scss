@@ -5,7 +5,10 @@
   flex-wrap: wrap;
   border-bottom: 1px solid #ebebeb;
   padding-block: 20px;
-  padding-inline: 20px;
+
+  @media screen and (width > $tablet-width) {
+    border: none;
+  }
 
   &__title {
     max-width: 76px;
@@ -38,6 +41,8 @@
 
   &__link {
     display: flex;
+    justify-content: center;
+
   }
 }
 

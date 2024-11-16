@@ -7,10 +7,27 @@
     font-family: $font-family-oswald;
     font-size: 36px;
     line-height: 36px;
-    color: #000000;
+    color: $basic-black;
     padding-block: 27px 41px;
-    padding-left: 20px;
-    border-bottom: $border-catalog;
     border-top: $border;
+    border-bottom: $border-dark;
+    width: 100%;
+    padding-inline: $container-padding-x-mobile;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      border: none;
+      padding-inline: $container-padding-x-tablet;
+    }
   }
+
+  &__list {
+    @media screen and (width > $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+    }
+  }
+
 }

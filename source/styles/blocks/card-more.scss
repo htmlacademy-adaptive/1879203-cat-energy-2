@@ -1,11 +1,15 @@
 .card-more {
   padding: 25px 20px;
-  border-bottom: $border-catalog;
+  border-bottom: $border-dark;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (width > $tablet-width) {
+    border: none;
+  }
 
   &__wrapper {
     display: flex;
