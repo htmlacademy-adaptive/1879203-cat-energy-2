@@ -1,13 +1,30 @@
 .hero {
-  background-color: $bg-basic-green;
+  width: 100%;
+  min-height: 480px;
+  margin-bottom: 20px;
+  padding-top: 27px;
+  background-color:  #ffffff;
   font-family: $font-family-oswald;
   color: #ffffff;
-  text-transform: uppercase;
+  background-image: url('../../images/hero-bg@2x.png');
+  //   background: linear-gradient(rgba(104, 183, 56, 0.85)), url('../../images/hero-bg@2x.png');
+  background-size: 100% 320px;
+  background-repeat: no-repeat;
+  background-position: top;
+  object-fit: cover;
+
+  @media screen and (width > $tablet-width) {
+    background-image: none;
+    color:  #000000;
+  }
+
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: grid;
+    position: relative;
   }
 
   &__title {
@@ -16,12 +33,36 @@
     line-height: 36px;
     text-align: center;
     padding-bottom: 25px;
+
+    @media screen and (width > $tablet-width) {
+      max-width: 414px;
+      text-align: left;
+      font-size: 44px;
+      line-height: 45px;
+      display: block;
+      margin-left: 120px;
+    }
   }
 
   &__text {
     font-size: 14px;
     line-height: 14px;
     padding-bottom: 29px;
+    text-transform: uppercase;
 
+    @media screen and (width > $tablet-width) {
+      text-align: left;
+      font-size: 15px;
+      line-height: 15px;
+      display: block;
+      margin-left: 120px;
+    }
+  }
+
+  &__link {
+    width: 244px;
+    margin-left: 120px;
+    position: absolute;
+    top: 175px;
   }
 }

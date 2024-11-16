@@ -65,6 +65,17 @@
       padding-inline: 16px;
       display: inline-flex;
       text-align: center;
+      position: relative;
+
+      &--current::after {
+        position: absolute;
+        content: "";
+        right: 16px;
+        left: 16px;
+        bottom: -10px;
+        height: 2px;
+        background-color: $bg-basic-green;
+      }
     }
   }
 

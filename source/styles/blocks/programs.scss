@@ -1,5 +1,5 @@
 .programs {
-  padding-block: 20px;
+  padding-bottom: 20px;
 
   &__list {
     display: grid;
@@ -101,6 +101,7 @@
 
     @media screen and (width > $tablet-width) {
       max-width: 340px;
+      border: none;
      }
 
      @media screen and (width > $desktop-width) {
