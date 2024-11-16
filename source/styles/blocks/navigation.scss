@@ -1,6 +1,24 @@
 .navigation {
   display: none; // none
 
+  @media screen and (width > $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (width > $desktop-width) {
+    &::before {
+      content: '';
+      width: 720px;
+      height: 625px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('../../images/hero-bg-desktop@1x.png');
+      z-index: 1;
+    }
+  }
 
   &__link {
     font-family: $font-family-oswald;
@@ -8,7 +26,43 @@
     line-height: 20px;
     color: #000000;
     text-transform: uppercase;
+
+    @media screen and (width > $tablet-width) {
+      padding-inline: 16px;
+      display: inline-flex;
+      text-align: center;
+      position: relative;
+
+      &--current::after {
+        position: absolute;
+        content: "";
+        right: 16px;
+        left: 16px;
+        bottom: -10px;
+        height: 2px;
+        background-color: $bg-basic-green;
+      }
+    }
+
+    @media screen and (width > $desktop-width) {
+      z-index: 2;
+      color: #ffffff;
+    }
   }
+
+  &__list {
+    @media screen and (width > $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 436px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      min-width: 510px;
+    }
+  }
+}
 
   // стили для выпадающего меню
   // @media screen and (width > $mobile-width) {
@@ -48,40 +102,3 @@
   //     padding: 22px 75px;
   //   }
   // }
-
-  @media screen and (width > $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-width: 436px;
-    }
-
-    &__link {
-      padding-inline: 16px;
-      display: inline-flex;
-      text-align: center;
-      position: relative;
-
-      &--current::after {
-        position: absolute;
-        content: "";
-        right: 16px;
-        left: 16px;
-        bottom: -10px;
-        height: 2px;
-        background-color: $bg-basic-green;
-      }
-    }
-  }
-
-  @media screen and (width > $desktop-width) {
-    &__list {
-      min-width: 475px;
-    }
-  }
-}

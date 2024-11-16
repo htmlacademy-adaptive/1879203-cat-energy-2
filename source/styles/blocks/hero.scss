@@ -2,8 +2,7 @@
   width: 100%;
   min-height: 480px;
   margin-bottom: 20px;
-  padding-top: 27px;
-  background-color:  #ffffff;
+  margin-top: 27px;
   font-family: $font-family-oswald;
   color: #ffffff;
   background-image: url('../../images/hero-bg@2x.png');
@@ -12,19 +11,29 @@
   background-repeat: no-repeat;
   background-position: top;
   object-fit: cover;
+  background-color:  #ffffff;
+  position: relative;
 
   @media screen and (width > $tablet-width) {
     background-image: none;
     color:  #000000;
-  }
+    }
+
+  @media screen and (width > $desktop-width) {
+    margin-top: 80px;
+    }
 
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: grid;
     position: relative;
+
+    @media screen and (width > $tablet-width) {
+      align-items: flex-start;
+      max-height: 695px;
+    }
   }
 
   &__title {
@@ -42,6 +51,14 @@
       display: block;
       margin-left: 120px;
     }
+
+    @media screen and (width > $desktop-width) {
+      font-size: 60px;
+      line-height: 60px;
+      max-width: 417px;
+      margin-left: 80px;
+
+    }
   }
 
   &__text {
@@ -57,6 +74,10 @@
       display: block;
       margin-left: 120px;
     }
+
+    @media screen and (width > $desktop-width) {
+      margin-left: 80px;
+    }
   }
 
   &__link {
@@ -65,6 +86,22 @@
       margin-left: 120px;
       position: absolute;
       top: 175px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      width: 244px;
+      margin-left: 80px;
+      position: absolute;
+      top: 200px;
+    }
+  }
+
+  &__img {
+    @media screen and (width > $desktop-width) {
+      position: absolute;
+      left: 425px;
+      top: -80px;
+      z-index: 2;
     }
   }
 }
