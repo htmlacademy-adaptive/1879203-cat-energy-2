@@ -11,12 +11,31 @@
     line-height: 40px;
     color: #000000;
     margin-bottom: 40px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 50px;
+      line-height: 50px;
+      margin-bottom: 60px;
+     }
   }
 
   &__text {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 20px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 55px;
+     }
+  }
+
+  &__wrapper {
+    @media screen and (width > $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+     }
   }
 
   &__list {
@@ -38,5 +57,12 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
+
+    @media screen and (width > $tablet-width) {
+      max-width: 175px;
+      font-size: 20px;
+      line-height: 22px;
+      text-align: right;
+     }
   }
 }

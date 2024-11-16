@@ -6,8 +6,18 @@
     font-size: 36px;
     line-height: 40px;
     color: #000000;
-    font-family: "Oswald", sans-serif;
+    font-family: $font-family-oswald;
     margin-bottom: 40px;
+  }
+
+  &__list {
+    display: grid;
+    counter-reset: benefits-counter 0;
+
+    @media screen and (width > $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+      gap: 37px 135px;
+     }
   }
 
   &__item {
@@ -20,14 +30,36 @@
     align-items: center;
 
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 25px;
     }
+
+    @media screen and (width > $tablet-width) {
+      max-width: 250px;
+      padding-top: 100px;
+      counter-increment: benefits-counter 1;
+
+      &::after {
+        content: counter(benefits-counter);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+     }
   }
 
   &__text {
     margin-left: 80px;
     font-size: 14px;
     line-height: 18px;
+    color: $base-text-color;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+
+    }
   }
 
   &__item--water {

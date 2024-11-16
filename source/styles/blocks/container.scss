@@ -1,14 +1,15 @@
 .container {
-  padding-inline: $container-padding-x;
+  padding-inline: $container-padding-x-mobile;
 
-  // @media screen and (width > $tablet-width) {
+  @media screen and (width > $tablet-width) {
+    padding-inline: $container-padding-x-tablet;
   //   max-width: calc(100% - 60px);
   //   display: flex;
   //   justify-content: center;
   //   align-items: center;
-  // }
+}
 
   @media screen and (width > $desktop-width) {
-      padding-inline: 110px;
+      padding-inline: $container-padding-x-desktop;
   }
 }

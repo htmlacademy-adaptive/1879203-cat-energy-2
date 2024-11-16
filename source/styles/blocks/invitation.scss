@@ -1,20 +1,35 @@
 .invitation {
-  height: 112px;
-  display: flex;
-  padding-block: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+
+  @media screen and (width > $tablet-width) {
+    column-gap: 310px;
+  }
 
   &__title {
-    font-family: "Oswald", sans-serif;
+    font-family: $font-family-oswald;
     font-size: 16px;
     line-height: 20px;
     color: #111111;
     text-transform: uppercase;
-    min-width: 140px;
-    max-width: 279px;
+
+    @media screen and (width > $tablet-width) {
+      max-width: 220px;
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &__text {
     font-size: 14px;
     line-height: 20px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      max-width: 160px;
+    }
   }
 }

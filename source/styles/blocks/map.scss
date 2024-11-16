@@ -1,3 +1,7 @@
 .map {
+  padding-block: 26px;
 
+  @media screen and (width > $tablet-width) {
+    padding: 62px 40px;
+   }
 }

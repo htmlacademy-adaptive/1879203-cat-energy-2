@@ -2,11 +2,15 @@
 
   display: flex;
   justify-content: center;
-  border-block: $border;;
+  border-block: $border;
   min-height: 30px;
   align-items: center;
   padding-block: 20px;
   margin-bottom: 20px;
+
+  @media screen and (width > $tablet-width) {
+    border-block: none;
+  }
 
   &__item {
     width: 28px;

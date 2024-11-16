@@ -1,12 +1,21 @@
 .footer {
   background-color: $basic-grey;
-  padding-block: 40px 47px ;
+  padding-block: 40px;
+
+  @media screen and (width > $tablet-width) {
+    padding-block: 55px;
+  }
 
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (width > $tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -21,6 +30,11 @@
     span {
       margin-right: 100%;
       text-wrap: nowrap;
+
+      @media screen and (width > $tablet-width) {
+        margin-right: 23px;
+        text-wrap: nowrap;
+      }
     }
   }
 }
