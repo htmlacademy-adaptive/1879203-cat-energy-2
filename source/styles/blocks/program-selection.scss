@@ -1,0 +1,17 @@
+.program-selection {
+  font-family: $font-family-oswald;
+
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+    color: $basic-black;
+    padding-block: 27px 37px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: $basic-black;
+    padding-bottom: 39px;
+  }
+}

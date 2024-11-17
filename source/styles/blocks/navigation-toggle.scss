@@ -47,7 +47,7 @@
     transform: rotate(45deg) translate(0, 50%);
   }
 
-  @media screen and (width > $mobile-width) {
+  @media screen and (width > $tablet-width) {
     display: none;
   }
 }

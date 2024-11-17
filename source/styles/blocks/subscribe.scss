@@ -64,6 +64,13 @@
     padding: 13px;
     border: 1px solid $special-grey;
 
+    &::placeholder {
+      font-family: $font-family-oswald;
+      font-size: 20px;
+      color: $base-text-color;
+      text-transform: uppercase;
+    }
+
     @media screen and (width > $tablet-width) {
       margin-bottom: 0;
       width: calc(100% - 392px); // (136 ушки и 256 кнопка)
@@ -72,16 +79,9 @@
       margin-left: 32px;
     }
 
-    &__::placeholder {
-      font-family: $font-family-oswald;
-      font-size: 20px;
-      color: $base-text-color;
-      text-transform: uppercase;
-    }
   }
 
   &__button {
-    width: 100%;
     height: 56px;
     font-size: 20px;
     line-height: 26px;

@@ -29,7 +29,9 @@
         height: 2px;
         background-color: $bg-basic-green;
       }
+    }
 
+    @media screen and (width > $desktop-width) {
       &--main-desktop {
         z-index: 2;
         color: #ffffff;
