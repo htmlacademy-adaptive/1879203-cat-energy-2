@@ -52,7 +52,7 @@
         <p class="program-selection__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
 
-        <form action="https://up.htmlacademy.ru/" method="post">
+        <form class="form form--main" action="https://up.htmlacademy.ru/" method="post">
 
           <fieldset class="form form--basic-info fieldset-reset">
             <legend class="visually-hidden">Поля для ввода данных вашего котика.</legend>
@@ -100,18 +100,18 @@
             <legend class="form__title">Дополнительно</legend>
             <ul class="form__list list-reset">
               <li class="form__item">
+                <label class="form__label form__label--checkbox"><input type="checkbox" name="additional-product" id="sweetener" value="sweetener" checked>Cахарозаменитель</label></li>
+              <li class="form__item">
                 <label class="form__label form__label--checkbox"><input type="checkbox" name="additional-product" id="water" value="water">Питьевая вода</label></li>
               <li class="form__item">
                 <label class="form__label form__label--checkbox"><input type="checkbox" name="additional-product" id="milk" value="milk">Молоко</label></li>
               <li class="form__item">
                 <label class="form__label form__label--checkbox"><input type="checkbox" name="additional-product" id="vitamins" value="vitamins">Витамины</label></li>
-              <li class="form__item">
-                  <label class="form__label form__label--checkbox"><input type="checkbox" name="additional-product" id="sweetener" value="sweetener" checked>Cахарозаменитель</label></li>
             </ul>
           </fieldset>
 
           <button class="form__button button button-reset button--main" type="submit">Отправить заявку</button>
-          <p class="form-comment">* — Обязательные поля</p>
+          <p class="form__comment">* — Обязательные поля</p>
 
         </form>
       </div>
