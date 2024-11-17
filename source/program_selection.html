@@ -49,37 +49,37 @@
     <section class="program-selection">
       <div class="container">
         <h1 class="program-selection__title">Подбор программы</h1>
-        <p class="program-selection__text">Заполните анкету, и мы подберем
-          программу питания для вашего кота</p>
+        <p class="program-selection__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
 
         <form class="form form--main" action="https://up.htmlacademy.ru/" method="post">
-
-          <fieldset class="form form--basic-info fieldset-reset">
-            <legend class="visually-hidden">Поля для ввода данных вашего котика.</legend>
-            <ul class="form__list list-reset">
-              <li class="form__item">
-                <label class="form__label">Имя:*<input type="text" name="name" id="name-field" placeholder="Барсик" required></label>
-              </li>
-              <li class="form__item">
-                <label class="form__label">Вес (кг):*<input type="number" name="weight" id="weight-field" placeholder="7" required></label>
-              </li>
-              <li class="form__item">
-                <label class="form__label">Возраст (лет):<input type="number" name="age" id="age-field" placeholder="7"></label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form form--program-selection fieldset-reset">
-            <legend class="visually-hidden">Выберете интересующую вас программу.</legend>
-            <ul class="form__list list-reset">
+          <div class="form__container">
+            <fieldset class="form form--basic-info fieldset-reset">
+              <legend class="visually-hidden">Поля для ввода данных вашего котика.</legend>
+              <ul class="form__list list-reset">
                 <li class="form__item">
-                  <label class="form__label form__label--radio"><input type="radio" name="program" id="weight-loss" value="weight-loss" checked><span class="program-type">Похудение</span></label></li>
+                  <label class="form__label">Имя:*<input type="text" name="name" id="name-field" placeholder="Барсик" required></label>
+                </li>
                 <li class="form__item">
-                  <label class="form__label form__label--radio"><input type="radio" name="program" id="weight-gain" value="weight-gain"><span class="program-type">Набор массы</span></label></li>
+                  <label class="form__label">Вес (кг):*<input type="number" name="weight" id="weight-field" placeholder="7" required></label>
+                </li>
                 <li class="form__item">
-                  <label class="form__label form__label--radio"><input type="radio" name="program" id="dont-know" value="dont-know"><span class="program-type">Не знаю (Нужен ваш совет)</span></label></li>
+                  <label class="form__label">Возраст (лет):<input type="number" name="age" id="age-field" placeholder="7"></label>
+                </li>
               </ul>
-          </fieldset>
+            </fieldset>
+
+            <fieldset class="form form--program-selection fieldset-reset">
+              <legend class="visually-hidden">Выберете интересующую вас программу.</legend>
+              <ul class="form__list list-reset">
+                  <li class="form__item">
+                    <label class="form__label form__label--radio"><input type="radio" name="program" id="weight-loss" value="weight-loss" checked><span class="program-type">Похудение</span></label></li>
+                  <li class="form__item">
+                    <label class="form__label form__label--radio"><input type="radio" name="program" id="weight-gain" value="weight-gain"><span class="program-type">Набор массы</span></label></li>
+                  <li class="form__item">
+                    <label class="form__label form__label--radio"><input type="radio" name="program" id="dont-know" value="dont-know"><span class="program-type">Не знаю (Нужен ваш совет)</span></label></li>
+                </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="form form--owner-info fieldset-reset">
             <legend class="form__title">Контактные данные (владельца кота)</legend>
@@ -110,9 +110,10 @@
             </ul>
           </fieldset>
 
-          <button class="form__button button button-reset button--main" type="submit">Отправить заявку</button>
-          <p class="form__comment">* — Обязательные поля</p>
-
+          <div class="form__wrapper">
+            <button class="form__button button button-reset button--main" type="submit">Отправить заявку</button>
+            <p class="form__comment">* — Обязательные поля</p>
+          </div>
         </form>
       </div>
     </section>

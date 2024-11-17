@@ -85,6 +85,8 @@
     height: 56px;
     font-size: 20px;
     line-height: 26px;
+    // padding: 15px 82px;
+    width: 100%;
 
     @media screen and (width > $tablet-width) {
       width: 256px;
