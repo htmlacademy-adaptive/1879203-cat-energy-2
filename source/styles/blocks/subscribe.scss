@@ -3,7 +3,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     align-items: center;
     width: 100%;
 
@@ -21,7 +21,7 @@
     line-height: 24px;
     color: $basic-black;
     position: relative;
-    padding: 0 20px 36px 0;
+    margin: 0 20px 36px 0;
 
     &::after {
       content: '';
@@ -46,7 +46,7 @@
     line-height: 24px;
     color: $basic-black;
     text-align: center;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 
     @media screen and (width > $tablet-width) {
       font-size: 24px;
@@ -78,7 +78,6 @@
       align-self: baseline;
       margin-left: 32px;
     }
-
   }
 
   &__button {
@@ -92,5 +91,4 @@
       width: 256px;
     }
   }
-
 }
