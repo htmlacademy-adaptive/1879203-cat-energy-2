@@ -1,6 +1,6 @@
 .card-additional {
-  border-top: 1px solid $special-grey;
-  border-bottom: 1px solid $special-grey;
+  border-top: 1px solid $grey-cdcdcd;
+  border-bottom: 1px solid $grey-cdcdcd;
   padding-block: 26px;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
   }
 
   @media screen and (width > $desktop-width) {
-    border-top: 1px solid $special-grey;
+    border-top: 1px solid $grey-cdcdcd;
     display: grid;
     grid-template-columns: 326px 301px 240px;
     padding-inline: 0;
@@ -28,7 +28,7 @@
     font-family: $font-family-oswald;
     font-size: 16px;
     line-height: 16px;
-    color: #222222;
+    color: $black-222222;
     text-transform: uppercase;
     padding-bottom: 13px;
 
@@ -44,7 +44,7 @@
   &__details {
     font-size: 14px;
     line-height: 14px;
-    color: #444444;
+    color: $base-text-color;
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;

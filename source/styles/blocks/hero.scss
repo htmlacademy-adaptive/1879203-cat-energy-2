@@ -4,19 +4,19 @@
   margin-bottom: 20px;
   margin-top: 27px;
   font-family: $font-family-oswald;
-  color: #ffffff;
+  color: $basic-white;
   background-image: url('../../images/hero-bg@2x.png');
-  //   background: linear-gradient(rgba(104, 183, 56, 0.85)), url('../../images/hero-bg@2x.png');
+  //   background: linear-gradient($gradient-green, url('../../images/hero-bg@2x.png'));
   background-size: 100% 320px;
   background-repeat: no-repeat;
   background-position: top;
   object-fit: cover;
-  background-color:  #ffffff;
+  background-color:  $basic-white;
   position: relative;
 
   @media screen and (width > $tablet-width) {
     background-image: none;
-    color:  #000000;
+    color:  $basic-black;
     }
 
   @media screen and (width > $desktop-width) {

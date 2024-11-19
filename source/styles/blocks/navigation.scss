@@ -11,7 +11,7 @@
     font-family: $font-family-oswald;
     font-size: 20px;
     line-height: 20px;
-    color: #000000;
+    color: $basic-black;
     text-transform: uppercase;
 
     @media screen and (width > $tablet-width) {
@@ -34,7 +34,7 @@
     @media screen and (width > $desktop-width) {
       &--main-desktop {
         z-index: 2;
-        color: #ffffff;
+        color: $basic-white;
       }
     }
   }
@@ -70,7 +70,7 @@
   //   overflow-y: auto;
   //   padding-top: 20px;
   //   padding-bottom: 0;
-  //   background-color: #FFFFFF;
+  //   background-color: $basic-white;
 
   //   &__item {
   //     width: 100%;
@@ -83,7 +83,7 @@
   //     font-family: "Oswald", sans-serif;
   //     font-size: 20px;
   //     line-height: 20px;
-  //     color: #000000;
+  //     color: $basic-black;
   //     text-transform: uppercase;
   //     width: auto;
   //     align-items: center;

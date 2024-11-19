@@ -19,7 +19,7 @@
 
   &__item {
     width: 100%;
-    background-color: $basic-grey;
+    background-color: $grey-f2f2f2;
     padding: 30px 33px 18px 20px;
 
       &:not(:last-child) {
@@ -77,7 +77,7 @@
   &__title {
     font-size: 24px;
     line-height: 37px;
-    color: #000000;
+    color: $basic-black;
     text-transform: uppercase;
     margin-bottom: 29px;
     margin-left: 80px;
@@ -96,10 +96,10 @@
   &__text {
     font-size: 14px;
     line-height: 18px;
-    font-family: "Lato", sans-serif;
+    font-family: $font-family-lato;
     // color: $base-text-color;
     padding-bottom: 23px;
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: $border;
     margin-bottom: 15px;
 
     @media screen and (width > $tablet-width) {
@@ -117,7 +117,7 @@
     font-family: $font-family-oswald;
     font-size: 16px;
     line-height: 16px;
-    color: #000000;
+    color: $basic-black;
     text-transform: uppercase;
     display: block;
     width: 133px;
@@ -129,7 +129,7 @@
       display: block;
       width: 24px;
       height: 12px;
-      background-color: #000;
+      background-color: $basic-black;
       mask-image: url('../../icons/stack.svg#icon-arrow');
       mask-size: 24px 12px;
       mask-position: 100%;
