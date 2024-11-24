@@ -4,8 +4,7 @@
   align-items: center;
   padding-top: 195px;
   background-color: $bg-basic-green;
-  background-image: url('../../images/banner-bg@2x.png');
-  // background: linear-gradient($gradient-green, url('../../images/banner-bg@2x.png'));
+  background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/banner-bg@2x.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

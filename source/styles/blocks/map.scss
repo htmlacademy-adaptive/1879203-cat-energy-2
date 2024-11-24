@@ -34,6 +34,8 @@
       url('../../images/map-mobile@2x.png') 2x);
   background-size: contain;
   background-repeat: no-repeat;
+  border: none;
+  display: block;
 
   @media screen and (width > $tablet-width) {
     height: 400px;

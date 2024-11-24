@@ -39,11 +39,18 @@
 
     @media screen and (width > $tablet-width) {
       max-width: 250px;
-      padding-top: 100px;
+      padding-top: 65px;
       counter-increment: benefits-counter 1;
 
       &::after {
         content: counter(benefits-counter);
+        font-size: 280px;
+        line-height: 280px;
+        color: $grey-f2f2f2;
+        font-family: $font-family-oswald;
+        z-index: -1;
+        margin-left: -80px;
+        margin-top: -105px;
       }
 
       &:not(:last-child) {

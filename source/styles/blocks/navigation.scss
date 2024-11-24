@@ -25,7 +25,7 @@
     text-transform: uppercase;
 
     @media screen and (width > $tablet-width) {
-      padding-inline: 16px;
+      padding-inline: 14px;
       display: inline-flex;
       text-align: center;
       position: relative;
@@ -38,6 +38,10 @@
         bottom: -10px;
         height: 2px;
         background-color: $bg-basic-green;
+
+        @media screen and (width > $desktop-width) {
+          background-color: $basic-white;
+        }
       }
     }
 
@@ -59,7 +63,7 @@
     }
 
     @media screen and (width > $desktop-width) {
-      min-width: 510px;
+      justify-self: right;
     }
   }
 }

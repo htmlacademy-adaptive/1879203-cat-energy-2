@@ -27,13 +27,20 @@
   }
 
   &__link--copyright {
-    justify-content: center;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @media screen and (width > $tablet-width) {
+      justify-content: right;
+      width: 168px;
+    }
 
     span {
-      margin-right: 100%;
+      // margin-right: 100%;
       text-wrap: nowrap;
+      display: block;
 
       @media screen and (width > $tablet-width) {
         margin-right: 23px;

@@ -4,18 +4,17 @@
   padding-block: 20px 27px;
   font-family: $font-family-oswald;
   color: $basic-white;
-  background-image: url('../../images/hero-bg@2x.png');
-  // background: linear-gradient($gradient-green, url('../../images/hero-bg@2x.png'));
+  background-color: $grey-cdcdcd;
+  background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/hero-bg@2x.png');
   background-size: 100% 320px;
   background-repeat: no-repeat;
-  background-position: top;
-  object-fit: cover;
-  background-color:  $basic-white;
+  background-position: center top;
   position: relative;
 
   @media screen and (width > $tablet-width) {
     background-image: none;
     color:  $basic-black;
+    padding-top: 40px;
     }
 
   @media screen and (width > $desktop-width) {
@@ -28,7 +27,7 @@
        position: absolute;
        top: -210px;
        right: 0;
-       background-image: url('../../images/hero-bg-desktop@1x.png');
+       background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/hero-bg-desktop@1x.png');
        z-index: 1;
      }
     }
@@ -40,6 +39,10 @@
     position: relative;
 
     @media screen and (width > $tablet-width) {
+      align-items: center;
+    }
+
+    @media screen and (width > $desktop-width) {
       align-items: flex-start;
     }
   }
@@ -57,7 +60,7 @@
       font-size: 44px;
       line-height: 45px;
       display: block;
-      margin-left: 120px;
+      margin-left: -200px;
       margin-bottom: 40px;
     }
 
@@ -66,7 +69,6 @@
       line-height: 60px;
       max-width: 417px;
       margin-left: 80px;
-
     }
   }
 
@@ -81,7 +83,7 @@
       font-size: 15px;
       line-height: 15px;
       display: block;
-      margin-left: 120px;
+      margin-left: -290px;
       margin-bottom: 50px;
 
     }
@@ -95,7 +97,7 @@
     @media screen and (width > $tablet-width) {
       width: 244px;
       height: 54px;
-      margin-left: 120px;
+      margin-left: -260px;
       position: absolute;
       top: 175px;
     }
