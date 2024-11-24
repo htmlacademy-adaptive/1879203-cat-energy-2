@@ -13,11 +13,17 @@
   }
 
   &__title {
+    font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
     color: $basic-black;
-    font-family: $font-family-oswald;
     margin-bottom: 40px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+     }
   }
 
   &__list {
@@ -77,9 +83,11 @@
   }
 
   &__text {
-    margin-left: 80px;
+    font-family: $font-family-lato;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+    margin-left: 80px;
     color: $base-text-color;
 
     @media screen and (width > $tablet-width) {

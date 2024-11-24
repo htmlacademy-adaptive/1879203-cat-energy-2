@@ -75,16 +75,19 @@
   }
 
   &__title {
+    font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 24px;
     line-height: 37px;
     color: $basic-black;
     text-transform: uppercase;
     margin-bottom: 29px;
     margin-left: 80px;
-    font-family: $font-family-oswald;
 
     @media screen and (width > $tablet-width) {
       margin-left: 0;
+      font-size: 36px;
+      line-height: 36px;
     }
 
     @media screen and (width > $desktop-width) {
@@ -97,7 +100,7 @@
     font-size: 14px;
     line-height: 18px;
     font-family: $font-family-lato;
-    // color: $base-text-color;
+    color: $base-text-color;
     padding-bottom: 23px;
     border-bottom: $border;
     margin-bottom: 15px;
@@ -105,6 +108,9 @@
     @media screen and (width > $tablet-width) {
       max-width: 340px;
       border: none;
+      font-size: 16px;
+      line-height: 24px;
+      color: $basic-black;
      }
 
      @media screen and (width > $desktop-width) {
@@ -117,12 +123,18 @@
     font-family: $font-family-oswald;
     font-size: 16px;
     line-height: 16px;
+    font-weight: 400;
     color: $basic-black;
     text-transform: uppercase;
     display: block;
     width: 133px;
     height: 24px;
     position: relative;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+     }
 
     &::after {
       content: '';
@@ -135,9 +147,13 @@
       mask-position: 100%;
       mask-repeat: no-repeat;
       position: absolute;
-      top: 15%;
+      top: 6%;
       left: 80%;
       // transform: translate(-50%, -50%);
+
+      @media screen and (width > $tablet-width) {
+        left: 95%;
+       }
     }
   }
 

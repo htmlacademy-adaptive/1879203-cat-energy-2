@@ -19,12 +19,15 @@
 
   &__link {
     font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
     text-transform: uppercase;
 
     @media screen and (width > $tablet-width) {
+      font-size: 18px;
+      line-height: 24px;
       padding-inline: 14px;
       display: inline-flex;
       text-align: center;

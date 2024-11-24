@@ -8,6 +8,7 @@
 
   @media screen and (width > $tablet-width) {
     background-color: $basic-white;
+
     &::before {
       content: '';
       width: 100%;
@@ -31,19 +32,26 @@
 
   &__title {
     font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
     color: $basic-black;
     margin-bottom: 40px;
 
     @media screen and (width > $tablet-width) {
-      font-size: 50px;
-      line-height: 50px;
+      font-size: 60px;
+      line-height: 60px;
       margin-bottom: 60px;
+     }
+
+     @media screen and (width > $tablet-width) {
+      background-color: $basic-white;
      }
   }
 
   &__text {
+    font-family: $font-family-lato;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 20px;
@@ -52,6 +60,7 @@
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 55px;
+      color: $base-text-color;
      }
   }
 
@@ -75,6 +84,7 @@
 
   &__result {
     font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: $basic-black;

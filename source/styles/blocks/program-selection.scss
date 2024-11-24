@@ -1,18 +1,26 @@
 .program-selection {
-  font-family: $font-family-oswald;
 
   @media screen and (width > $tablet-width) {
     padding-inline: 40px;
   }
 
   &__title {
+    font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 36px;
     line-height: 36px;
     color: $basic-black;
     margin-block: 27px 37px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   &__text {
+    font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: $basic-black;

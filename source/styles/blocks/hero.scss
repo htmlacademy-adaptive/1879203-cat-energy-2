@@ -3,6 +3,7 @@
   min-height: 480px;
   padding-block: 20px 27px;
   font-family: $font-family-oswald;
+  font-weight: 400;
   color: $basic-white;
   background-color: $gradient-green;
   background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/hero-bg@2x.png');
@@ -66,18 +67,17 @@
     margin-bottom: 25px;
 
     @media screen and (width > $tablet-width) {
-      max-width: 414px;
+      max-width: 450px;
       text-align: left;
-      font-size: 44px;
-      line-height: 45px;
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 400;
       display: block;
-      margin-left: -200px;
+      margin-left: -155px;
       margin-bottom: 40px;
     }
 
     @media screen and (width > $desktop-width) {
-      font-size: 60px;
-      line-height: 60px;
       max-width: 417px;
       margin-left: 80px;
     }
@@ -86,13 +86,14 @@
   &__text {
     font-size: 14px;
     line-height: 14px;
+    font-weight: 400;
     margin-bottom: 29px;
     text-transform: uppercase;
 
     @media screen and (width > $tablet-width) {
       text-align: left;
-      font-size: 15px;
-      line-height: 15px;
+      font-size: 20px;
+      line-height: 20px;
       display: block;
       margin-left: -290px;
       margin-bottom: 50px;
@@ -108,9 +109,9 @@
     @media screen and (width > $tablet-width) {
       width: 244px;
       height: 54px;
-      margin-left: -260px;
+      margin-left: -330px;
       position: absolute;
-      top: 175px;
+      top: 235px;
     }
 
     @media screen and (width > $desktop-width) {

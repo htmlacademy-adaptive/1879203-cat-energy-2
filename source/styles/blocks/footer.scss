@@ -41,6 +41,12 @@
       // margin-right: 100%;
       text-wrap: nowrap;
       display: block;
+      font-family: $font-family-lato;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $base-text-color;
+
 
       @media screen and (width > $tablet-width) {
         margin-right: 23px;

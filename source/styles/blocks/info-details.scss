@@ -2,6 +2,7 @@
 
   &__title {
     font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     color: $basic-black;
@@ -10,10 +11,22 @@
     // margin-left: 45px;
     // display: inline-block;
 
+    @media screen and (width > $tablet-width) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
   }
 
   &__description {
+    font-family: $font-family-lato;
+    font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }

@@ -25,15 +25,20 @@
   &__logo picture {
     display: inline-block;
 
-    @media screen and (width > $desktop-width) {
+    @media screen and (width > $tablet-width) {
         margin-right: 14px;
       }
     }
 
   &__logo--text {
+    margin: 0;
 
-    @media screen and (width > $desktop-width) {
+    @media screen and (width > $tablet-width) {
       margin-right: auto;
+    }
+
+    img {
+      vertical-align: middle;
     }
   }
 

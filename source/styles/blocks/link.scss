@@ -5,6 +5,9 @@
 
   &--show-more {
     font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     color: $base-text-color;
     text-transform: uppercase;
     background-color: $grey-f2f2f2;
@@ -18,12 +21,18 @@
     font-family: $font-family-oswald;
     font-size: 16px;
     line-height: 20px;
+    font-weight: 400;
     color: $basic-white;
     text-transform: uppercase;
     background-color: $bg-basic-green;
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
 }

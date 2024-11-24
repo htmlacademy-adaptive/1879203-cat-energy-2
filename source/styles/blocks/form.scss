@@ -1,6 +1,5 @@
 .form {
   width: 100%;
-  font-family: $font-family-oswald;
 
   &__list {
     display: flex;
@@ -20,10 +19,12 @@
   }
 
   &__title {
-    padding: 0;
+    font-family: $font-family-oswald;
     font-size: 24px;
     line-height: 26px;
     color: $basic-black;
+    font-weight: 400;
+    padding: 0;
     margin-bottom: 35px;
     display: block;
     position: relative;
@@ -53,19 +54,22 @@
   }
 
   &__label {
-      font-size: 16px;
-      line-height: 18px;
-      color: $base-text-color;
-      text-transform: uppercase;
-      // margin-right: 13px;
-      display: flex;
-      align-items: center;
-      white-space: nowrap;
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $base-text-color;
+    text-transform: uppercase;
+    // margin-right: 13px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 13px;
 
-      @media screen and (width > $tablet-width) {
-        font-size: 20px;
-        line-height: 30px;
-      }
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   &__button {
@@ -171,18 +175,15 @@
    &--basic-info,
    &--owner-info {
     input {
-      // width: 100%;
+      width: 100%;
       height: 45px;
       padding: 13px;
       border: 1px solid $grey-cdcdcd;
-    }
-
-    input::placeholder {
-     font-family: $font-family-oswald;
-     font-size: 16px;
-     line-height: 18px;
-     color: $base-text-color;
-     text-transform: uppercase;
+      font-family: $font-family-oswald;
+      font-size: 16px;
+      line-height: 18px;
+      color: $base-text-color;
+      text-transform: uppercase;
     }
    }
 
