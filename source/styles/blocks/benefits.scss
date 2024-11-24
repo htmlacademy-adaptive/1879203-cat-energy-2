@@ -1,6 +1,11 @@
 .benefits {
   margin-top: 0;
-  margin-bottom: 49px;
+  padding-bottom: 49px;
+
+  &__wrapper {
+    display: grid;
+    justify-content: center;
+  }
 
   &__title {
     font-size: 36px;
@@ -21,6 +26,7 @@
 
      @media screen and (width > $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 37px 80px;
      }
   }
 
@@ -51,12 +57,18 @@
         z-index: -1;
         margin-left: -80px;
         margin-top: -105px;
+
+          @media screen and (width > $desktop-width) {
+            margin-left: -115px;
+          }
       }
 
       &:not(:last-child) {
         margin-bottom: 0;
       }
      }
+
+
   }
 
   &__text {
@@ -69,7 +81,10 @@
       font-size: 16px;
       line-height: 24px;
       margin: 0;
+    }
 
+    @media screen and (width > $desktop-width) {
+      min-width: 241px;
     }
   }
 
