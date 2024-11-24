@@ -5,6 +5,7 @@
   align-items: center;
   padding: 13px 20px;
   width: 100%;
+  min-height: 65px;
 
   @media screen and (width > $tablet-width) {
     padding: 25px 34px 20px 30px;
@@ -34,7 +35,6 @@
       margin-right: 543px;
     }
   }
-
 
   &--border-bottom {
 
