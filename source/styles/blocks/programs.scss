@@ -12,7 +12,8 @@
    @media screen and (width > $desktop-width) {
       grid-template-columns: 1fr 1fr;
       gap: 80px;
-      // justify-items: center;
+      max-width: 1220px;
+      margin: 0 auto;
     }
   }
 

@@ -14,7 +14,7 @@
 
   @media screen and (width > $desktop-width) {
     padding: 55px 110px 20px 110px;
-    justify-content: center;
+    // justify-content: center;
   }
 
   &__logo {
@@ -33,7 +33,7 @@
   &__logo--text {
 
     @media screen and (width > $desktop-width) {
-      margin-right: 543px;
+      margin-right: auto;
     }
   }
 

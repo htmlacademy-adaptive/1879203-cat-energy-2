@@ -38,10 +38,16 @@
         bottom: -10px;
         height: 2px;
         background-color: $bg-basic-green;
+      }
 
-        @media screen and (width > $desktop-width) {
-          background-color: $basic-white;
-        }
+      &--current.navigation__link--main-desktop::after {
+        position: absolute;
+        content: "";
+        right: 16px;
+        left: 16px;
+        bottom: -10px;
+        height: 2px;
+        background-color: $basic-white;
       }
     }
 
@@ -52,6 +58,8 @@
       }
     }
   }
+
+
 
   &__list {
 
@@ -114,3 +122,4 @@
       padding: 22px 75px;
     }
   }
+

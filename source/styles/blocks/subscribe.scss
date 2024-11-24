@@ -17,21 +17,34 @@
 
   &__title {
     font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     color: $basic-black;
     position: relative;
-    margin: 0 20px 36px 0;
+    margin: 25px 0 36px 0;
+    width: fit-content;
+    background-color: $basic-white;
+    box-shadow: -40px 0 0 $basic-white, 40px 0 0 $basic-white;
 
-    &::after {
+    &::before {
       content: '';
       display: block;
-      width: 94px;
-      height: 1px;
-      background-color: $bg-basic-green;
       position: absolute;
-      top: 15px;
-      right: -20px;
+      width: 100vw;
+      height: 2px;
+      background-color: $bg-basic-green;
+      box-shadow: 100vw 0 0 $bg-basic-green;
+      top: 0.5em;
+      right: 0;
+      z-index: -1;
+    }
+
+    @media screen and (width > $tablet-width) {
+      margin-bottom: 66px;
+      margin-left: 30px;
+      font-size: 32px;
+      line-height: 32px;
     }
 
     @media screen and (width > $desktop-width) {
@@ -53,6 +66,10 @@
       line-height: 32px;
       max-width: 530px;
       text-align: center;
+    }
+
+    @media screen and (width > $tablet-width) {
+      max-width: 100%;
     }
   }
 

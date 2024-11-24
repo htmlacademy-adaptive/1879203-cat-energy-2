@@ -4,12 +4,22 @@
   padding-block: 20px 27px;
   font-family: $font-family-oswald;
   color: $basic-white;
-  background-color: $grey-cdcdcd;
+  background-color: $gradient-green;
   background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/hero-bg@2x.png');
   background-size: 100% 320px;
   background-repeat: no-repeat;
   background-position: center top;
-  position: relative;
+
+  // &::before {
+  //   content: '';
+  //   width: 320px;
+  //   height: 302px;
+  //   position: absolute;
+  //   top: 0;
+  //   object-fit: none;
+  //   background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/hero-bg@2x.png');
+  //   background-size: 320px 302px;
+  // }
 
   @media screen and (width > $tablet-width) {
     background-image: none;
@@ -18,14 +28,15 @@
     }
 
   @media screen and (width > $desktop-width) {
-    padding-top: 80px;
+    padding-block: 80px;
+    height: 600px;
 
      &::before {
        content: '';
        width: 720px;
-       height: 625px;
+       height: 650px;
        position: absolute;
-       top: -210px;
+       top: 0;
        right: 0;
        background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/hero-bg-desktop@1x.png');
        z-index: 1;
