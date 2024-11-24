@@ -1,14 +1,30 @@
 .invitation {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3px;
+    min-height: 112px;
+    padding-block: 26px;
 
-  @media screen and (width > $tablet-width) {
-    column-gap: 310px;
-  }
+    @media screen and (width > $tablet-width) {
+      column-gap: 310px;
+      padding-block: 60px;
+      padding-inline: 40px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      position: absolute;
+      left: 110px;
+      top: 95px;
+      width: 565px;
+      height: 199px;
+      background-color: $basic-white;
+      column-gap: 0;
+      padding-inline: 78px;
+    }
 
   &__title {
     font-family: $font-family-oswald;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: $black-111111;
@@ -22,6 +38,7 @@
   }
 
   &__text {
+    font-family: $font-family-lato;
     font-size: 14px;
     line-height: 20px;
 
@@ -30,6 +47,7 @@
       line-height: 20px;
       text-align: right;
       max-width: 160px;
+      justify-self: flex-end;
     }
   }
 }

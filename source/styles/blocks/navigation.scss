@@ -11,6 +11,12 @@
     width: 100%;
   }
 
+  &__item {
+    @media screen and (width > $tablet-width) {
+      border: none;
+    }
+  }
+
   &__link {
     font-family: $font-family-oswald;
     font-size: 20px;
@@ -78,8 +84,12 @@
     background-color: $basic-white;
   }
 
+  .navigation__container {
+    position: sticky;
+    top: 0;
+  }
+
   .navigation__item {
-      width: 100%;
       border-bottom: 1px solid $grey-e6e6e6;
 
       &:first-child {
