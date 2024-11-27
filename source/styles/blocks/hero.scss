@@ -6,30 +6,28 @@
   font-weight: 400;
   color: $basic-white;
   background-color: $gradient-green;
-  background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/hero-bg@2x.png');
-  background-size: 100% 320px;
+  background:
+            linear-gradient(to top, $basic-white 178px, $gradient-green 178px),
+            image-set(
+              url("../../images/hero-bg@1x.webp") 1x type("image/webp"),
+              url("../../images/hero-bg@1x.png") 1x,
+              url("../../images/hero-bg@2x.webp") 2x type("image/webp"),
+              url("../../images/hero-bg@2x.png") 2x
+              );
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
-
-  // &::before {
-  //   content: '';
-  //   width: 320px;
-  //   height: 302px;
-  //   position: absolute;
-  //   top: 0;
-  //   object-fit: none;
-  //   background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/hero-bg@2x.png');
-  //   background-size: 320px 302px;
-  // }
 
   @media screen and (width > $tablet-width) {
     background-image: none;
     color:  $basic-black;
     padding-top: 40px;
+    width: 708px;
+    margin: 0 auto;
     }
 
   @media screen and (width > $desktop-width) {
-    padding-block: 80px;
+    width: 1220px;
     height: 600px;
 
      &::before {
@@ -47,15 +45,12 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    position: relative;
 
     @media screen and (width > $tablet-width) {
-      align-items: center;
-    }
-
-    @media screen and (width > $desktop-width) {
       align-items: flex-start;
+      position: relative;
     }
   }
 
@@ -73,13 +68,11 @@
       line-height: 60px;
       font-weight: 400;
       display: block;
-      margin-left: -155px;
       margin-bottom: 40px;
     }
 
     @media screen and (width > $desktop-width) {
       max-width: 417px;
-      margin-left: 80px;
     }
   }
 
@@ -95,13 +88,8 @@
       font-size: 20px;
       line-height: 20px;
       display: block;
-      margin-left: -290px;
       margin-bottom: 50px;
 
-    }
-
-    @media screen and (width > $desktop-width) {
-      margin-left: 80px;
     }
   }
 
@@ -109,15 +97,13 @@
     @media screen and (width > $tablet-width) {
       width: 244px;
       height: 54px;
-      margin-left: -330px;
       position: absolute;
       top: 235px;
     }
 
     @media screen and (width > $desktop-width) {
       width: 244px;
-      margin-left: 80px;
-      position: absolute;
+      position: unset;
       top: 200px;
     }
   }
@@ -126,9 +112,11 @@
 
     @media screen and (width > $desktop-width) {
       position: absolute;
-      left: 425px;
-      top: -80px;
+      right: 13%;
+      top: 0;
       z-index: 2;
+      height: 499px;
+      margin-top: -30px;
     }
   }
 }
