@@ -69,11 +69,11 @@
               <legend class="visually-hidden">Выберете интересующую вас программу.</legend>
               <ul class="form__list list-reset">
                   <li class="form__item">
-                    <label class="form__label form__label--radio"><input type="radio" name="program" id="weight-loss" value="weight-loss" checked><span class="program-type">Похудение</span></label></li>
+                    <label class="form__label form__label--radio"><input class="form__input form__input--radio" type="radio" name="program" id="weight-loss" value="weight-loss" checked><span class="program-type">Похудение</span></label></li>
                   <li class="form__item">
-                    <label class="form__label form__label--radio"><input type="radio" name="program" id="weight-gain" value="weight-gain"><span class="program-type">Набор массы</span></label></li>
+                    <label class="form__label form__label--radio"><input class="form__input form__input--radio" type="radio" name="program" id="weight-gain" value="weight-gain"><span class="program-type">Набор массы</span></label></li>
                   <li class="form__item">
-                    <label class="form__label form__label--radio"><input type="radio" name="program" id="dont-know" value="dont-know"><span class="program-type">Не знаю (Нужен ваш совет)</span></label></li>
+                    <label class="form__label form__label--radio"><input class="form__input form__input--radio" type="radio" name="program" id="dont-know" value="dont-know"><span class="program-type">Не знаю (Нужен ваш совет)</span></label></li>
                 </ul>
             </fieldset>
           </div>
@@ -81,10 +81,18 @@
           <fieldset class="form form--owner-info fieldset-reset">
             <legend class="form__title">Контактные данные (владельца кота)</legend>
             <ul class="form__list list-reset">
-              <li class="form__item">
-                <label class="form__label">E-mail:*<input type="email" name="owner-email" id="owner-email-field" placeholder="kuklachev@gmail.com" autocomplete="on" required></label></li>
-                <li class="form__item">
-                <label class="form__label">Телефон:*<input type="tel" name="owner-tel" id="owner-tel-field" placeholder="8 (960) 900-60-90" autocomplete="on" required></label></li>
+              <li class="form__item form__item--owner-info">
+                <label class="form__label">E-mail:*<input type="email" name="owner-email" id="owner-email-field" placeholder="kuklachev@gmail.com" autocomplete="on" required>
+                <svg class="form__icon form__icon--email" width="20" height="20" aria-hidden="true">
+                  <use href="/icons/stack.svg#icon-email"></use>
+                </svg>
+                </label></li>
+                <li class="form__item form__item--owner-info">
+                <label class="form__label">Телефон:*<input type="tel" name="owner-tel" id="owner-tel-field" placeholder="8 (960) 900-60-90" autocomplete="on" required>
+                  <svg class="form__icon form__icon--phone" width="20" height="20" aria-hidden="true">
+                    <use href="/icons/stack.svg#icon-phone"></use>
+                  </svg>
+                </label></li>
             </ul>
           </fieldset>
 
@@ -97,13 +105,13 @@
             <legend class="form__title">Дополнительно</legend>
             <ul class="form__list list-reset">
               <li class="form__item">
-                <label class="form__label form__label--checkbox"><input type="checkbox" name="additional-product" id="sweetener" value="sweetener" checked>Cахарозаменитель</label></li>
+                <label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" name="additional-product" id="sweetener" value="sweetener" checked>Cахарозаменитель</label></li>
               <li class="form__item">
-                <label class="form__label form__label--checkbox"><input type="checkbox" name="additional-product" id="water" value="water">Питьевая вода</label></li>
+                <label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" name="additional-product" id="water" value="water">Питьевая вода</label></li>
               <li class="form__item">
-                <label class="form__label form__label--checkbox"><input type="checkbox" name="additional-product" id="milk" value="milk">Молоко</label></li>
+                <label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" name="additional-product" id="milk" value="milk">Молоко</label></li>
               <li class="form__item">
-                <label class="form__label form__label--checkbox"><input type="checkbox" name="additional-product" id="vitamins" value="vitamins">Витамины</label></li>
+                <label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" name="additional-product" id="vitamins" value="vitamins">Витамины</label></li>
             </ul>
           </fieldset>
 
