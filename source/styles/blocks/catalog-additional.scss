@@ -1,19 +1,22 @@
 .catalog-additional {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   overflow-x: hidden;
 
   @media screen and (width > $tablet-width) {
     align-items: normal;
   }
 
+  @media screen and (width > $desktop-width) {
+    padding-bottom: 30px;;
+  }
+
   &__wrapper {
     @media screen and (width > $desktop-width) {
       display: flex;
-      gap: 80px;
       flex-direction: row;
       flex-wrap: nowrap;
+      max-width: 1220px;
+      margin: 0 auto;
+      justify-content: space-between;
     }
   }
 
@@ -65,6 +68,7 @@
     @media screen and (width > $desktop-width) {
       border: none;
       max-width: 895px;
+      margin-bottom: 0;
     }
   }
 

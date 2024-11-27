@@ -1,5 +1,5 @@
 .card-more {
-  padding: 25px 20px;
+  padding: 78px 20px 25px;
   border-bottom: $border-dark;
   display: flex;
   justify-content: center;
@@ -8,7 +8,15 @@
   align-items: center;
 
   @media screen and (width > $tablet-width) {
-    border: none;
+    padding: 78px 37px 40px;
+    border: 2px solid $grey-f2f2f2;
+    height: 395px;
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+
+  @media screen and (width > $desktop-width) {
+    max-width: 245px;
   }
 
   &__wrapper {
@@ -21,6 +29,11 @@
   &__img {
     display: block;
     margin-bottom: 23px;
+
+    @media screen and (width > $tablet-width) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__title {
@@ -36,6 +49,26 @@
     @media screen and (width > $tablet-width) {
       font-size: 20px;
       line-height: 24px;
+      max-width: 170px;
+      text-align: center;
+      margin-bottom: 21px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 86px;
+      width: 30px;
+      height: 30px;
+      background-image: url('../../icons/stack.svg#icon-plus');
+
+      @media screen and (width > $tablet-width) {
+        top: -100px;
+        left: 50px;
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 
@@ -49,6 +82,9 @@
     @media screen and (width > $tablet-width) {
       font-size: 16px;
       line-height: 18px;
+      max-width: 170px;
+      text-align: center;
+      margin-bottom: 49px;
     }
   }
 }

@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
 
+  // @media screen and (width > $desktop-width) {
+  //   max-width: 1220px;
+  //   margin: 0 auto;
+  // }
+
   &__title {
     font-family: $font-family-oswald;
     font-weight: 400;
@@ -35,7 +40,10 @@
 
     @media screen and (width > $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
-      gap: 80px;
+      column-gap: 80px;
+      row-gap: 53px;
+      align-items: stretch;
+
     }
   }
 }
