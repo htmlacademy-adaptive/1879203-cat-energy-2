@@ -7,26 +7,73 @@
     line-height: 24px;
     color: $basic-black;
     text-transform: uppercase;
-    // margin-top: 23px;
-    // margin-left: 45px;
-    // display: inline-block;
+    margin-bottom: 8px;
+    display: block;
 
     @media screen and (width > $tablet-width) {
       font-size: 30px;
       line-height: 37px;
+      margin-bottom: 9px;
     }
 
+    &--weight {
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../../icons/stack.svg#icon-weight-back);
+        background-repeat: no-repeat;
+        width: 124px;
+        height: 56px;
+        top: -16px;
+        left: 0;
+
+        @media screen and (width > $tablet-width) {
+          width: 162px;
+          height: 77px;
+          top: -18px;
+        }
+    }
+  }
+
+      &--time {
+        &::before {
+          content: '';
+          position: absolute;
+          background-image: url(../../icons/stack.svg#icon-weight-back);
+          background-repeat: no-repeat;
+          width: 124px;
+          height: 56px;
+          top: -16px;
+          right: 0;
+
+          @media screen and (width > $tablet-width) {
+            width: 162px;
+            height: 77px;
+            top: -18px;
+            right: -3px;
+          }
+        }
+      }
   }
 
   &__description {
     font-family: $font-family-lato;
+    color: $base-text-color;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+    width: 82px;
+    text-align: center;
+    display: block;
 
     @media screen and (width > $tablet-width) {
       font-size: 14px;
       line-height: 14px;
+      z-index: 1;
+      background-color: $basic-white;
+      width: auto;
+      padding: 0 10px;
     }
   }
 }
