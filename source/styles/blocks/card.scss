@@ -3,8 +3,26 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid #ebebeb;
   padding-block: 20px;
+  position: relative;
+  box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: $grey-d9d9d9;
+    box-shadow: 100vw 0 0 $grey-d9d9d9;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (width > $tablet-width) {
+      display: none;
+   }
+  }
 
   @media screen and (width > $tablet-width) {
     border: none;
@@ -86,6 +104,10 @@
       flex-direction: column;
       align-items: center;
     }
+  }
+
+  &__img {
+    object-fit: cover;
   }
 }
 

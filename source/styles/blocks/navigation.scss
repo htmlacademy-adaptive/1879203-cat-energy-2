@@ -43,14 +43,16 @@
         background-color: $bg-basic-green;
       }
 
-      &--current.navigation__link--main-desktop::after {
-        position: absolute;
-        content: "";
-        right: 16px;
-        left: 16px;
-        bottom: -10px;
-        height: 2px;
-        background-color: $basic-white;
+      @media screen and (width > $desktop-width) {
+        &--current.navigation__link--main-desktop::after {
+          position: absolute;
+          content: "";
+          right: 16px;
+          left: 16px;
+          bottom: -10px;
+          height: 2px;
+          background-color: $basic-white;
+        }
       }
     }
 

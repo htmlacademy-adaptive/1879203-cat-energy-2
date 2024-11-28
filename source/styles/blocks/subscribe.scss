@@ -13,6 +13,11 @@
       align-items: center;
       justify-content: center;
     }
+
+    @media screen and (width > $desktop-width) {
+      margin: 0 auto;
+      padding-bottom: 104px;
+    }
   }
 
   &__title {
@@ -70,7 +75,7 @@
       text-align: center;
     }
 
-    @media screen and (width > $tablet-width) {
+    @media screen and (width > $desktop-width) {
       max-width: 100%;
     }
   }
@@ -95,6 +100,11 @@
       min-width: 420px;
       align-self: baseline;
       margin-left: 32px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      margin-left: 0;
+      max-width: 752px;
     }
   }
 

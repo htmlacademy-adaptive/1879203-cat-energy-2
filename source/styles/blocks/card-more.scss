@@ -1,11 +1,29 @@
 .card-more {
   padding: 78px 20px 25px;
-  border-bottom: $border-dark;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: $grey-d9d9d9;
+    box-shadow: 100vw 0 0 $grey-d9d9d9;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (width > $tablet-width) {
+      display: none;
+   }
+  }
 
   @media screen and (width > $tablet-width) {
     padding: 78px 37px 40px;

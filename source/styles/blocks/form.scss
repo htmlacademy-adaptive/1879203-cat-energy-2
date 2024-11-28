@@ -108,7 +108,6 @@
     right: 14px;
   }
 
-
   &__button {
     margin-bottom: 21px;
     width: 100%;
@@ -176,14 +175,23 @@
     position: relative;
     box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
 
+    @media screen and (width > $tablet-width) {
+      margin-bottom: 55px;
+   }
+
+   @media screen and (width > $desktop-width) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+ }
+
    &::after {
       content: '';
       display: block;
       position: absolute;
       width: 100vw;
       height: 2px;
-      background-color: #D9D9D9;
-      box-shadow: 100vw 0 0 #D9D9D9;
+      background-color: $grey-d9d9d9;
+      box-shadow: 100vw 0 0 $grey-d9d9d9;
       bottom: 0;
       right: 0;
       z-index: -1;
@@ -192,16 +200,6 @@
         display: none;
      }
     }
-
-    @media screen and (width > $tablet-width) {
-      border-bottom: 0;
-      margin-bottom: 55px;
-   }
-
-   @media screen and (width > $tablet-width) {
-    border-bottom: 0;
-    margin-bottom: 0;
-  }
   }
 
   &--program-selection {
@@ -257,6 +255,13 @@
    }
 
    &--comment {
+    padding-bottom: 23px;
+
+    @media screen and (width > $tablet-width) {
+    padding-bottom: 65px;
+   }
+
+
     textarea {
       font-family: $font-family-oswald;
       font-size: 16px;
@@ -267,7 +272,6 @@
       border: 1px solid $grey-cdcdcd;
       padding: 14px;
       text-align: left;
-      margin-bottom: 23px;
 
       @media screen and (width > $tablet-width) {
         padding: 11px 20px;

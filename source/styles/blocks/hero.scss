@@ -7,7 +7,7 @@
   color: $basic-white;
   background-color: $gradient-green;
   background:
-            linear-gradient(to top, $basic-white 178px, $gradient-green 178px),
+            linear-gradient(to top, $basic-white 194px, $gradient-green 178px),
             image-set(
               url("../../images/hero-bg@1x.webp") 1x type("image/webp"),
               url("../../images/hero-bg@1x.png") 1x,
@@ -69,10 +69,12 @@
       font-weight: 400;
       display: block;
       margin-bottom: 40px;
+      margin-left: 40px;
     }
 
     @media screen and (width > $desktop-width) {
       max-width: 417px;
+      margin-left: 0;
     }
   }
 
@@ -89,7 +91,11 @@
       line-height: 20px;
       display: block;
       margin-bottom: 50px;
+      margin-left: 40px;
+    }
 
+    @media screen and (width > $desktop-width) {
+      margin-left: 0;
     }
   }
 
@@ -99,12 +105,14 @@
       height: 54px;
       position: absolute;
       top: 235px;
+      margin-left: 40px;
     }
 
     @media screen and (width > $desktop-width) {
       width: 244px;
       position: unset;
       top: 200px;
+      margin-left: 0;
     }
   }
 

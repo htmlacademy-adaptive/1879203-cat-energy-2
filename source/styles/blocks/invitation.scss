@@ -50,5 +50,9 @@
       max-width: 160px;
       justify-self: flex-end;
     }
+
+    @media screen and (width > $desktop-width) {
+      text-align: left;
+    }
   }
 }
