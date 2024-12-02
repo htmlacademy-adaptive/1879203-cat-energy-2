@@ -73,5 +73,22 @@
       transform: translate(-50%, -50%);
     }
   }
+}
 
+.slider__button:hover,
+.slider__button:hover::after {
+  background-color: $bg-basic-green;
+}
+
+.slider__button:active,
+.slider__button:active::after {
+  background-color: $bg-basic-green;
+}
+
+.slider__button:hover::before {
+  border-color: $bg-basic-green;
+}
+
+.slider__button:active::before {
+  border-color: $bg-basic-green;
 }
