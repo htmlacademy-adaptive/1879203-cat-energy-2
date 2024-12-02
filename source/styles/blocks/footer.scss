@@ -6,7 +6,7 @@
     padding-block: 55px;
   }
 
-  &__container {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,6 +15,12 @@
     @media screen and (width > $tablet-width) {
       flex-direction: row;
       justify-content: space-between;
+      max-width: 708px;
+      margin: 0 auto;
+    }
+
+    @media screen and (width > $desktop-width) {
+      max-width: 1220px;
     }
   }
 
@@ -38,7 +44,6 @@
     }
 
     span {
-      // margin-right: 100%;
       text-wrap: nowrap;
       display: block;
       font-family: $font-family-lato;

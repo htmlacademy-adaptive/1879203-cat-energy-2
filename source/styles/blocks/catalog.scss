@@ -3,10 +3,16 @@
   flex-direction: column;
   align-items: center;
 
-  // @media screen and (width > $desktop-width) {
-  //   max-width: 1220px;
-  //   margin: 0 auto;
-  // }
+  &__wrapper{
+    @media screen and (width > $tablet-width) {
+      max-width: 708px;
+      margin: 0 auto;
+    }
+
+    @media screen and (width > $desktop-width) {
+      max-width: 1220px;
+    }
+  }
 
   &__title {
     font-family: $font-family-oswald;
@@ -17,17 +23,17 @@
     padding-block: 27px 41px;
     border-bottom: $border-dark;
     width: 100%;
-    padding-inline: $container-padding-x-mobile;
+    // padding-inline: $container-padding-x-mobile;
 
     @media screen and (width > $tablet-width) {
       font-size: 60px;
       line-height: 60px;
       border: none;
-      padding-inline: $container-padding-x-tablet;
+      // padding-inline: $container-padding-x-tablet;
     }
 
     @media screen and (width > $desktop-width) {
-      padding-inline: $container-padding-x-desktop;
+      // padding-inline: $container-padding-x-desktop;
     }
   }
 

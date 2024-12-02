@@ -5,7 +5,7 @@
   font-family: $font-family-oswald;
   font-weight: 400;
   color: $basic-white;
-  background-color: $gradient-green;
+  background-color: $grey-666666;
   background:
             linear-gradient(to top, $basic-white 194px, $gradient-green 178px),
             image-set(
@@ -22,12 +22,13 @@
     background-image: none;
     color:  $basic-black;
     padding-top: 40px;
-    width: 708px;
+    max-width: 708px;
     margin: 0 auto;
+
     }
 
   @media screen and (width > $desktop-width) {
-    width: 1220px;
+    max-width: 1220px;
     height: 600px;
 
      &::before {

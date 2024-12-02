@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
 
   &__container {
@@ -43,23 +44,25 @@
         background-color: $bg-basic-green;
       }
 
-      @media screen and (width > $desktop-width) {
-        &--current.navigation__link--main-desktop::after {
-          position: absolute;
-          content: "";
-          right: 16px;
-          left: 16px;
-          bottom: -10px;
-          height: 2px;
-          background-color: $basic-white;
+          &:last-child {
+            padding-right: 0;
         }
-      }
     }
 
     @media screen and (width > $desktop-width) {
       &--main-desktop {
         z-index: 2;
         color: $basic-white;
+      }
+
+      &--current.navigation__link--main-desktop::after {
+        position: absolute;
+        content: "";
+        right: 16px;
+        left: 16px;
+        bottom: -10px;
+        height: 2px;
+        background-color: $basic-white;
       }
     }
   }
@@ -70,7 +73,7 @@
 
     @media screen and (width > $tablet-width) {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       min-width: 436px;
     }

@@ -1,21 +1,26 @@
 .invitation {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 3px;
+    justify-content: space-between;
     min-height: 112px;
     padding-block: 26px;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
 
     @media screen and (width > $tablet-width) {
       column-gap: 310px;
       padding-block: 60px;
       padding-inline: 40px;
+      max-width: 708px;
+      margin: 0 auto;
     }
 
     @media screen and (width > $desktop-width) {
       position: absolute;
-      left: 110px;
+      left: 30%;
       top: 95px;
-      width: 565px;
+      max-width: 565px;
       height: 199px;
       background-color: $basic-white;
       column-gap: 0;
@@ -53,6 +58,13 @@
 
     @media screen and (width > $desktop-width) {
       text-align: left;
+    }
+
+    & span {
+      @media screen and (width > $tablet-width) {
+        display: block;
+        margin-top: 15px;
+      }
     }
   }
 }

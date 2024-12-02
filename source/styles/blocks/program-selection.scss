@@ -1,7 +1,14 @@
 .program-selection {
 
-  @media screen and (width > $tablet-width) {
-    padding-inline: 40px;
+  &__wrapper {
+    @media screen and (width > $tablet-width) {
+      max-width: 708px;
+      margin: 0 auto;
+    }
+
+    @media screen and (width > $desktop-width) {
+      max-width: 1220px;
+    }
   }
 
   &__title {

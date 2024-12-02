@@ -1,15 +1,20 @@
 .catalog-additional {
   overflow-x: hidden;
 
-  @media screen and (width > $tablet-width) {
-    align-items: normal;
-  }
-
-  @media screen and (width > $desktop-width) {
-    padding-bottom: 30px;;
-  }
-
   &__wrapper {
+    @media screen and (width > $tablet-width) {
+      align-items: normal;
+      max-width: 708px;
+      margin: 0 auto;
+    }
+
+    @media screen and (width > $desktop-width) {
+      padding-bottom: 30px;
+      max-width: 1220px;
+    }
+  }
+
+  &__items-wrapper {
     @media screen and (width > $desktop-width) {
       display: flex;
       flex-direction: row;
@@ -19,6 +24,8 @@
       justify-content: space-between;
     }
   }
+
+
 
   &__title {
     font-family: $font-family-oswald;

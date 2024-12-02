@@ -10,11 +10,13 @@
 
   @media screen and (width > $tablet-width) {
     padding: 25px 34px 20px 30px;
+    max-width: 708px;
+    margin: 0 auto;
   }
 
   @media screen and (width > $desktop-width) {
     padding: 55px 110px 20px 110px;
-    // justify-content: center;
+    max-width: 1220px;
   }
 
   &__logo {
