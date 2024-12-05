@@ -24,13 +24,17 @@
   &__img--fat {
     width: 50%;
     overflow: hidden;
+
+    clip-path: inset(0 50% 0 0);
+
   }
 
   &__img--skinny {
     width: 50%;
     overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
+
+    clip-path: inset(0 0 0 50%);
+
   }
 
   &__button {
@@ -43,7 +47,7 @@
     display: block;
     position: absolute;
     top: 0;
-    left: 15px;
+    left: 50%;
 
     &::before {
       content: '';
