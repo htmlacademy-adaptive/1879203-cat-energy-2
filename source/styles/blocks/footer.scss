@@ -30,6 +30,15 @@
     @media screen and (width > $tablet-width) {
       margin-bottom: 0;
     }
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &__link--copyright {
@@ -57,6 +66,15 @@
         margin-right: 23px;
         text-wrap: nowrap;
       }
+    }
+
+    &:hover,
+    &:focus {
+      color: $bg-basic-green;
+    }
+
+    &:active{
+      opacity: 0.3;
     }
   }
 }

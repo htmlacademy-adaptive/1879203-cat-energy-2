@@ -8,6 +8,18 @@
   position: relative;
   box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
 
+  @media screen and (width > $tablet-width) {
+    padding: 78px 37px 40px;
+    border: 2px solid $grey-f2f2f2;
+    height: 395px;
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+
+  @media screen and (width > $desktop-width) {
+    max-width: 245px;
+  }
+
   &::after {
     content: '';
     display: block;
@@ -23,18 +35,6 @@
     @media screen and (width > $tablet-width) {
       display: none;
    }
-  }
-
-  @media screen and (width > $tablet-width) {
-    padding: 78px 37px 40px;
-    border: 2px solid $grey-f2f2f2;
-    height: 395px;
-    align-self: flex-end;
-    justify-content: flex-end;
-  }
-
-  @media screen and (width > $desktop-width) {
-    max-width: 245px;
   }
 
   &__wrapper {

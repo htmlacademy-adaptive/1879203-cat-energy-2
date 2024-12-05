@@ -6,7 +6,7 @@
   width: 100%;
   min-height: 30px;
   align-items: center;
-  padding-block: 20px;
+  // padding-block: 20px;
   margin-bottom: 20px;
 
   @media screen and (width > $tablet-width) {
@@ -16,12 +16,10 @@
   }
 
   &__item {
-    width: 28px;
-    height: 22px;
-
-    &:not(:last-child) {
-      margin-right: 24px;
-    }
+    width: 30px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 24px;
   }
 
   &__link {
@@ -29,6 +27,15 @@
     background-repeat: no-repeat;
     background-size: 28px 22px;
     transition: all 1s;
+
+    &:hover,
+    &:focus {
+      color: $bg-basic-green;
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
   }
 
   &__link--vk {
