@@ -1,6 +1,15 @@
 .programs {
   padding-bottom: 20px;
 
+  @media screen and (width > $tablet-width) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media screen and (width > $desktop-width) {
+    max-width: 1220px;
+  }
+
   &__list {
     display: grid;
     width: 100%;
@@ -13,8 +22,6 @@
    @media screen and (width > $desktop-width) {
       grid-template-columns: 1fr 1fr;
       gap: 80px;
-      max-width: 1220px;
-      margin: 0 auto;
     }
   }
 
@@ -152,15 +159,13 @@
 
     &::after {
       content: '';
+      position: absolute;
       display: block;
       width: 24px;
       height: 12px;
-      background-color: $basic-black;
-      mask-image: url('../../icons/stack.svg#icon-arrow');
-      mask-size: 24px 12px;
-      mask-position: 100%;
-      mask-repeat: no-repeat;
-      position: absolute;
+      background-image: url('../../icons/stack.svg#icon-arrow');
+      background-size: 24px 12px;
+      background-repeat: no-repeat;
       top: 40%;
       left: 60%;
 
@@ -168,6 +173,13 @@
         left: 86%;
        }
     }
-  }
 
+    &:hover::after,
+    &:active::after {
+        width: 32px;
+        background-size: 32px 12px;
+    }
+  }
 }
+
+

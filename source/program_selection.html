@@ -12,17 +12,20 @@
 <body class="page__body">
 
   <header class="header header--border-bottom">
-        <a class="header__logo link-reset" href="index.html">
-          <picture>
-            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1200px)" srcset="./images/logo-pic-desktop.svg">
-            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-pic-tablet.svg">
-            <img class="logo logo--pic" src="./images/logo-pic-mobile.svg" alt="логотип магазина Cat Energy." width="33" height="38">
-          </picture>
-        </a>
-        <a href="index.html" class="header__logo--text link-reset">
-          <img src="./images/logo-text.svg" width="101" height="20" alt="Товарный знак магазина Cat Energy.">
+    <div class="header__wrapper container">
+
+      <a class="header__logo link-reset" href="index.html">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1200px)" srcset="./images/logo-pic-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-pic-tablet.svg">
+          <img class="logo logo--pic" src="./images/logo-pic-mobile.svg" alt="логотип магазина Cat Energy." width="33" height="38">
+        </picture>
       </a>
-      <navigation class="navigation">
+      <a href="index.html" class="header__logo--text">
+        <img src="./images/logo-text.svg" width="101" height="20" alt="Товарный знак магазина Cat Energy.">
+
+    </a>
+      <nav class="navigation">
         <div class="navigation__container">
           <ul class="navigation__list list-reset">
             <li class="navigation__item">
@@ -36,9 +39,12 @@
             </li>
           </ul>
         </div>
-      </navigation>
+      </nav>
     <button class="navigation__toggle button-reset" type="button">
       <span class="navigation__toggle--span"></span>
+    </button>
+    </div>
+
   </header>
 
   <main class="main">

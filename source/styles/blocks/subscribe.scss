@@ -1,6 +1,7 @@
 .subscribe {
 
   &__wrapper {
+
     @media screen and (width > $tablet-width) {
       max-width: 708px;
       margin: 0 auto;
@@ -14,15 +15,16 @@
   &__items-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     padding-bottom: 40px;
-    align-items: center;
     width: 100%;
 
     @media screen and (width > $tablet-width) {
       flex-direction: row;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: baseline;
       justify-content: center;
+      padding-bottom: 80px;
     }
 
     @media screen and (width > $desktop-width) {
@@ -90,10 +92,31 @@
     }
   }
 
-  &__input {
+  &__form-wrapper {
+    @media screen and (width > $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__form {
     margin-bottom: 16px;
     width: 100%;
-    // min-width: 280px;
+    min-width: 280px;
+
+    @media screen and (width > $tablet-width) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    width: 100%;
     height: 56px;
     padding: 13px;
     border: 1px solid $grey-cdcdcd;
@@ -115,6 +138,7 @@
     @media screen and (width > $desktop-width) {
       margin-left: 0;
       max-width: 752px;
+      display: block;
     }
   }
 
@@ -122,9 +146,12 @@
     font-size: 20px;
     line-height: 26px;
     width: 100%;
+    display: block;
+    padding-inline: 0;
 
     @media screen and (width > $tablet-width) {
       width: 256px;
+      height: 100%;
     }
   }
 }

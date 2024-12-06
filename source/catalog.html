@@ -12,6 +12,8 @@
 <body class="page__body">
 
   <header class="header header--border-bottom">
+    <div class="header__wrapper container">
+
       <a class="header__logo link-reset" href="index.html">
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width: 1200px)" srcset="./images/logo-pic-desktop.svg">
@@ -23,7 +25,7 @@
         <img src="./images/logo-text.svg" width="101" height="20" alt="Товарный знак магазина Cat Energy.">
 
     </a>
-      <navigation class="navigation">
+      <nav class="navigation">
         <div class="navigation__container">
           <ul class="navigation__list list-reset">
             <li class="navigation__item">
@@ -37,10 +39,12 @@
             </li>
           </ul>
         </div>
-      </navigation>
+      </nav>
     <button class="navigation__toggle button-reset" type="button">
       <span class="navigation__toggle--span"></span>
     </button>
+    </div>
+
   </header>
 
   <main class="main">
@@ -287,8 +291,13 @@
           <h2 class="subscribe__title">Акции и новинки</h2>
           <div class="subscribe__items-wrapper">
             <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-            <input type="text" class="subscribe__input" placeholder="кuklachev@gmail.com">
-            <button type="submit" class="subscribe__button button button--main button-reset">Подписаться</button>
+            <div class="subscribe__form-wrapper">
+              <form class="subscribe__form" action="#" method="GET" >
+                <label for="subscribe-input"><span class="visually-hidden">Поле ввода электронной почты</span></label>
+                  <input type="text" class="subscribe__input" placeholder="кuklachev@gmail.com" id="subscribe-input">
+              </form>
+              <button type="submit" class="subscribe__button button button--main button-reset">Подписаться</button>
+            </div>
           </div>
         </div>
       </div>

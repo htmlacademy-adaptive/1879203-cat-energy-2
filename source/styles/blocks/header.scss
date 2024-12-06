@@ -1,23 +1,35 @@
 .header {
-  background-color: $basic-white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 13px 20px;
-  width: 100%;
-  min-height: 65px;
-  position: relative;
-
   @media screen and (width > $tablet-width) {
-    padding: 25px 34px 20px 30px;
     max-width: 708px;
     margin: 0 auto;
   }
 
   @media screen and (width > $desktop-width) {
-    padding: 55px 110px 20px 110px;
     max-width: 1220px;
   }
+
+  &__wrapper {
+    background-color: $basic-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 13px;
+    width: 100%;
+    min-height: 65px;
+    position: relative;
+
+    @media screen and (width > $tablet-width) {
+      padding-block: 25px 20px;
+      // max-width: 708px;
+      // margin: 0 auto;
+    }
+
+    @media screen and (width > $desktop-width) {
+      padding-block: 55px 20px;
+      // max-width: 1220px;
+    }
+  }
+
 
   &__logo {
     display: flex;

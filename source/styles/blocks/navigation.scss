@@ -5,7 +5,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   &__container {
@@ -45,9 +44,9 @@
       &--current::after {
         position: absolute;
         content: "";
-        right: 0;
-        left: 16px;
-        bottom: -10px;
+        right: 12px;
+        left: 13px;
+        bottom: 8px;
         height: 2px;
         background-color: $bg-basic-green;
       }
@@ -66,9 +65,9 @@
       &--current.navigation__link--main-desktop::after {
         position: absolute;
         content: "";
-        right: 0;
-        left: 16px;
-        bottom: -10px;
+        right: 12px;
+        left: 13px;
+        bottom: 8px;
         height: 2px;
         background-color: $basic-white;
       }

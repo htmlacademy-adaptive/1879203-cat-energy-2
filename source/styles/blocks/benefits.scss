@@ -2,18 +2,18 @@
   margin-top: 0;
   padding-bottom: 49px;
 
+  @media screen and (width > $desktop-width) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media screen and (width > $desktop-width) {
+    max-width: 1220px;
+  }
+
   &__wrapper {
     display: grid;
     justify-content: center;
-
-    @media screen and (width > $desktop-width) {
-      max-width: 708px;
-      margin: 0 auto;
-    }
-
-    @media screen and (width > $desktop-width) {
-      max-width: 1220px;
-    }
   }
 
   &__title {
