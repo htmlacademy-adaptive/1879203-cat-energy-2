@@ -4,12 +4,11 @@
   margin: 0 auto;
 
   @media screen and (width > $tablet-width) {
-    background: linear-gradient(to bottom, $basic-white 57%, $grey-eaeaea 43%);
+    background: linear-gradient(to bottom, $basic-white 61%, $grey-eaeaea 39%);
+  }
 
-
-    @media screen and (width > $desktop-width) {
-      background: linear-gradient(to bottom, $basic-white 23%, $basic-white 10%);
-    }
+  @media screen and (width > $desktop-width) {
+    background: linear-gradient(to bottom, $basic-white 23%, $grey-eaeaea 10%);
   }
 
   &__wrapper {
@@ -112,7 +111,7 @@
     text-align: center;
   }
 
-  &__res {
+  &__result {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -122,9 +121,16 @@
       flex-direction: column;
       align-items: flex-end;
      }
+
+     @media screen and (width > $desktop-width) {
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 68px;
+      justify-content: flex-start;
+     }
   }
 
-  &__result {
+  &__result-text {
     font-family: $font-family-oswald;
     font-weight: 400;
     font-size: 14px;
@@ -133,9 +139,6 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
-    flex-direction: row;
-    justify-content: center;
-    display: flex;
 
     @media screen and (width > $tablet-width) {
       max-width: 175px;
@@ -144,14 +147,31 @@
       text-align: right;
       margin: 0;
       margin-bottom: 5px;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: flex-start;
      }
 
      @media screen and (width > $desktop-width) {
       flex-direction: row;
       max-width: 330px;
+      justify-content: space-between;
+      margin-bottom: 0;
+     }
+  }
+
+  &__result-price {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $basic-black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 22px;
+      text-align: right;
+      margin: 0;
      }
   }
 }

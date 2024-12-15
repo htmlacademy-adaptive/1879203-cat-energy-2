@@ -75,5 +75,11 @@
       width: auto;
       padding: 0 10px;
     }
+
+    @media screen and (width > $desktop-width) {
+
+      background-color: $grey-eaeaea;
+
+    }
   }
 }

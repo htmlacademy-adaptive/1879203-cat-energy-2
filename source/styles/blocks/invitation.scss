@@ -4,8 +4,10 @@
     justify-content: space-between;
     min-height: 112px;
     padding-block: 26px;
+    padding-inline: 20px;
     width: 100%;
     margin: 0 auto;
+
 
     @media screen and (width > $tablet-width) {
       column-gap: 310px;
