@@ -39,7 +39,7 @@
           </ul>
         </div>
       </nav>
-      <button class="navigation__toggle button-reset" type="button">
+      <button class="navigation__toggle button-reset" type="button"><span class="visually-hidden">Открыть меню</span>
         <span class="navigation__toggle--span"></span>
       </button>
     </div>
@@ -104,25 +104,27 @@
 
     <section class="info">
       <div class="container">
-        <div class="info__wrapper info__wrapper--desktop">
+        <div class="info__wrapper">
           <h2 class="info__title">Живой пример</h2>
-          <p class="info__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="info__example">
-            <dl class="info__list">
+          <div class="info__text-wrapper">
+            <p class="info__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="info__example">
+              <dl class="info__list">
 
-              <div class="info__item">
-                <dt class="info-details"><span class="info-details__title info-details__title--weight">5 кг</span></dt>
-                <dd><span class="info-details__description">снижение веса</span></dd>
+                <div class="info__item">
+                  <dt class="info-details"><span class="info-details__title info-details__title--weight">5 кг</span></dt>
+                  <dd><span class="info-details__description">снижение веса</span></dd>
+                </div>
+
+                <div class="info__item">
+                  <dt class="info-details"><span class="info-details__title info-details__title--time">60 дней</span></dt>
+                  <dd class="info-details"><span class="info-details__description">затрачено времени</span></dd>
+                </div>
+
+              </dl>
+              <div class="info__res">
+                <p class="info__result">Затраты на питание: <span class="info__result info__result--price ">15 000 РУБ.</span></p>
               </div>
-
-              <div class="info__item">
-                <dt class="info-details"><span class="info-details__title info-details__title--time">60 дней</span></dt>
-                <dd class="info-details"><span class="info-details__description">затрачено времени</span></dd>
-              </div>
-
-            </dl>
-            <div class="info__res">
-              <p class="info__result">Затраты на питание: <span class="info__result info__result--price ">15 000 РУБ.</span></p>
             </div>
           </div>
           <div class="info__slider slider">
@@ -162,7 +164,7 @@
           <li class="social__item"><a class="social__link social__link--youtube link-reset" href="#"><span class="visually-hidden">ссылка на наш ютуб</span></a></li>
           <li class="social__item"><a class="social__link social__link--telegram link-reset" href="#"><span class="visually-hidden">ссылка на наш телеграм</span></a></li>
         </ul>
-        <a class="footer__link footer__link--copyright link-reset" href="#"><span class="copyright_text">HTML Academy</span><img src="./images/icon-logo-html-academy.svg" alt="Логотип HTML Academy." width="27" height="34"></a>
+        <a class="footer__link footer__link--copyright link-reset" href="#"><span class="copyright_text">HTML Academy</span><svg width="27" height="34"><use href="./icons/stack.svg#icon-html-academy"></use></svg></a>
     </div>
   </footer>
 </body>

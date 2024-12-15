@@ -47,6 +47,15 @@
     justify-content: space-between;
     width: 100%;
 
+    &:hover,
+    &:focus {
+      color: $bg-basic-green;
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
+
     @media screen and (width > $tablet-width) {
       justify-content: right;
       width: 168px;
@@ -66,15 +75,6 @@
         margin-right: 23px;
         text-wrap: nowrap;
       }
-    }
-
-    &:hover,
-    &:focus {
-      color: $bg-basic-green;
-    }
-
-    &:active{
-      opacity: 0.3;
     }
   }
 }
