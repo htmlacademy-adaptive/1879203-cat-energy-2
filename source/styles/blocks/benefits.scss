@@ -21,6 +21,7 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
+    font-display: swap;
     color: $basic-black;
     margin-bottom: 40px;
 
@@ -69,6 +70,7 @@
         line-height: 280px;
         color: $grey-f2f2f2;
         font-family: $font-family-oswald;
+        font-display: swap;
         z-index: -1;
         margin-left: -80px;
         margin-top: -105px;
@@ -91,6 +93,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+    font-display: swap;
     margin-left: 80px;
     color: $base-text-color;
 

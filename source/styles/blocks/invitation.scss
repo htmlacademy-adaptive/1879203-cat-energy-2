@@ -33,6 +33,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    font-display: swap;
     color: $black-111111;
     text-transform: uppercase;
 
@@ -47,6 +48,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    font-display: swap;
     text-align: right;
 
     @media screen and (width > $tablet-width) {

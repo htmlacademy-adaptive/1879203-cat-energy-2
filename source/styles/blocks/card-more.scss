@@ -59,6 +59,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    font-display: swap;
     color: $black-111111;
     margin-bottom: 8px;
     text-transform: uppercase;
@@ -95,6 +96,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    font-display: swap;
     color: $base-text-color;
 
     @media screen and (width > $tablet-width) {

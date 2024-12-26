@@ -19,21 +19,16 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
+    font-display: swap;
     color: $basic-black;
     padding-block: 27px 41px;
     border-bottom: $border-dark;
     width: 100%;
-    // padding-inline: $container-padding-x-mobile;
 
     @media screen and (width > $tablet-width) {
       font-size: 60px;
       line-height: 60px;
       border: none;
-      // padding-inline: $container-padding-x-tablet;
-    }
-
-    @media screen and (width > $desktop-width) {
-      // padding-inline: $container-padding-x-desktop;
     }
   }
 

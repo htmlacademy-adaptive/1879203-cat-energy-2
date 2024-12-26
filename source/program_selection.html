@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Подбор программы</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Магазин полезной еды Cat Energy для вашего котика">
+  <title>Подбор программы</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="/source/fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="/source/fonts/oswald/oswaldregular.woff2" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -105,6 +108,7 @@
 
             <fieldset class="form form--comment fieldset-reset">
               <legend class="form__title">Комментарий</legend>
+              <label class="visually-hidden" for="comment-field">Комментарий</label>
               <textarea name="comment" id="comment-field" rows="10">Расскажите обо всех повадках кота</textarea>
             </fieldset>
 
