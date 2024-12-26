@@ -20,13 +20,11 @@
 
     @media screen and (width > $tablet-width) {
       padding-block: 25px 20px;
-      // max-width: 708px;
-      // margin: 0 auto;
+
     }
 
     @media screen and (width > $desktop-width) {
       padding-block: 55px 20px;
-      // max-width: 1220px;
     }
   }
 

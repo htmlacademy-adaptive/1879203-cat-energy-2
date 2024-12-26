@@ -92,12 +92,12 @@
 
 // стили для выпадающего меню
 .navigation.navigation--active {
-  @media screen and (max-width: $mobile-width-only) {
+  @media screen and (width < $tablet-width) {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: fixed;
     height: fit-content;
     width: 100%;
     top: 67px;
