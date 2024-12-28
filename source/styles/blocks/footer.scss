@@ -65,10 +65,15 @@
       color: $grey-666666;
     }
 
-    svg:hover,
-    svg:focus {
-      color: $bg-basic-green;
+    &:hover + svg,
+    &:focus + svg {
+      fill: $bg-basic-green;
     }
+
+    // svg:hover,
+    // svg:focus {
+    //   color: $bg-basic-green;
+    // }
 
     span {
       text-wrap: nowrap;

@@ -93,6 +93,13 @@
 
       &:checked {
         background-image: url('../../icons/stack.svg#icon-radiobutton-active');
+        border-color: $grey-BABABA;
+      }
+
+      &:disabled,
+      &:disabled + span {
+        opacity: 0.3;
+        cursor: not-allowed;
       }
     }
 
@@ -101,8 +108,16 @@
 
       &:checked {
         background-image: url('../../icons/stack.svg#icon-tick');
+        border-color: $grey-BABABA;
+      }
+
+      &:disabled,
+      &:disabled + span {
+        opacity: 0.3;
+        cursor: not-allowed;
       }
     }
+
   }
 
   &__icon {
@@ -252,7 +267,6 @@
       font-family: $font-family-oswald;
       font-size: 16px;
       line-height: 18px;
-      font-display: swap;
       color: $base-text-color;
       text-transform: uppercase;
 
@@ -260,8 +274,13 @@
         border: 1px solid $grey-cdcdcd;
       }
 
-      &:active {
+
+      &:focus {
         border: 1px solid $base-text-color;
+      }
+
+      &:focus + svg {
+        fill: $bg-basic-green;
       }
 
       &:user-invalid {
