@@ -9,9 +9,9 @@
   box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
 
   @media screen and (width > $tablet-width) {
-    padding: 78px 37px 40px;
+    padding: 160px 37px 40px;
     border: 2px solid $grey-f2f2f2;
-    height: 395px;
+    min-height: 395px;
     align-self: flex-end;
     justify-content: flex-end;
   }
@@ -59,7 +59,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    font-display: swap;
     color: $black-111111;
     margin-bottom: 8px;
     text-transform: uppercase;
@@ -96,7 +95,6 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    font-display: swap;
     color: $base-text-color;
 
     @media screen and (width > $tablet-width) {
@@ -104,7 +102,7 @@
       line-height: 18px;
       max-width: 170px;
       text-align: center;
-      margin-bottom: 49px;
+      // margin-bottom: 49px;
     }
   }
 }

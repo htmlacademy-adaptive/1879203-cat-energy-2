@@ -21,6 +21,7 @@
 
     @media screen and (width > $desktop-width) {
       max-width: 1220px;
+      padding-inline: 0;
     }
   }
 
@@ -47,15 +48,6 @@
     justify-content: space-between;
     width: 100%;
 
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-
-    &:active{
-      opacity: 0.3;
-    }
-
     @media screen and (width > $tablet-width) {
       justify-content: right;
       width: 168px;
@@ -65,16 +57,6 @@
       color: $grey-666666;
     }
 
-    &:hover + svg,
-    &:focus + svg {
-      fill: $bg-basic-green;
-    }
-
-    // svg:hover,
-    // svg:focus {
-    //   color: $bg-basic-green;
-    // }
-
     span {
       text-wrap: nowrap;
       display: block;
@@ -82,7 +64,6 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
-      font-display: swap;
       color: $base-text-color;
 
 
@@ -90,6 +71,16 @@
         margin-right: 23px;
         text-wrap: nowrap;
       }
+    }
+
+    &:hover,
+    &:focus {
+      color: $bg-basic-green;
+    }
+
+    &:active{
+      color: $bg-basic-green;
+      opacity: 0.3;
     }
   }
 }

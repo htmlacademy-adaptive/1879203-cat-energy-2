@@ -12,12 +12,11 @@
   }
 
   &__wrapper {
-    width: 280px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
+    margin: 0 auto;
 
     @media screen and (width > $tablet-width) {
       width: 708px;
@@ -35,7 +34,6 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    font-display: swap;
     color: $basic-black;
     margin-bottom: 40px;
 
@@ -55,7 +53,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-display: swap;
     margin-bottom: 34px;
     color: $base-text-color;
 
@@ -88,10 +85,11 @@
   &__list {
     display: grid;
     grid-template-columns: 124px 124px;
+    gap: 32px;
     align-items: unset;
+    justify-content: center;
     margin: 0;
     margin-bottom: 20px;
-    gap: 32px;
 
     @media screen and (width > $tablet-width) {
       margin: 0;
@@ -102,6 +100,7 @@
     @media screen and (width > $desktop-width) {
       margin-bottom: 53px;
       gap: 53px;
+      justify-content: left;
     }
   }
 
@@ -137,7 +136,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    font-display: swap;
     color: $basic-black;
     text-transform: uppercase;
     text-align: center;
@@ -165,7 +163,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    font-display: swap;
     color: $basic-black;
     text-transform: uppercase;
     text-align: center;

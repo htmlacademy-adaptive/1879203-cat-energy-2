@@ -4,7 +4,14 @@
   align-items: center;
   padding-top: 190px;
   background-color: $bg-basic-green;
-  background: linear-gradient(0.25turn, $gradient-green, $gradient-green), url('../../images/banner-bg@2x.png');
+  background:
+          linear-gradient(0.25turn, $gradient-green, $gradient-green),
+          image-set(
+            url('../../images/banner-bg@1x.webp') type("image/webp") 1x,
+            url('../../images/banner-bg@2x.webp') type("image/webp") 2x,
+            url('../../images/banner-bg@1x.png') type("image/png")  1x,
+            url('../../images/banner-bg@2x.png') type("image/png") 2x
+          );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,7 +60,6 @@
     font-family: $font-family-lato;
     font-weight: 400;
     font-size: 16px;
-    font-display: swap;
     line-height: 20px;
     color: $basic-white;
     display: block;

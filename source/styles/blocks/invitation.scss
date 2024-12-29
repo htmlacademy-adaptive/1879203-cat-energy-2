@@ -1,73 +1,71 @@
 .invitation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    min-height: 112px;
-    padding-block: 26px;
-    padding-inline: 20px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  min-height: 112px;
+  padding-block: 26px;
+  padding-inline: 20px;
+  width: 100%;
+  margin: 0 auto;
+
+
+  @media screen and (width > $tablet-width) {
+    column-gap: 310px;
+    padding-block: 60px;
+    padding-inline: 40px;
+    max-width: 708px;
     margin: 0 auto;
+  }
 
+  @media screen and (width > $desktop-width) {
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    max-width: 565px;
+    height: 199px;
+    background-color: $basic-white;
+    column-gap: 0;
+    padding-inline: 78px;
+  }
 
-    @media screen and (width > $tablet-width) {
-      column-gap: 310px;
-      padding-block: 60px;
-      padding-inline: 40px;
-      max-width: 708px;
-      margin: 0 auto;
-    }
+&__title {
+  font-family: $font-family-oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black-111111;
+  text-transform: uppercase;
 
-    @media screen and (width > $desktop-width) {
-      position: absolute;
-      left: 30%;
-      top: 95px;
-      max-width: 565px;
-      height: 199px;
-      background-color: $basic-white;
-      column-gap: 0;
-      padding-inline: 78px;
-    }
+  @media screen and (width > $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 
-  &__title {
-    font-family: $font-family-oswald;
-    font-weight: 400;
+&__text {
+  font-family: $font-family-lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+
+  @media screen and (width > $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    font-display: swap;
-    color: $black-111111;
-    text-transform: uppercase;
-
-    @media screen and (width > $tablet-width) {
-      font-size: 20px;
-      line-height: 26px;
-    }
+    color: $base-text-color;
+    max-width: 160px;
+    justify-self: flex-end;
   }
 
-  &__text {
-    font-family: $font-family-lato;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    font-display: swap;
-    text-align: right;
+  @media screen and (width > $desktop-width) {
+    text-align: left;
+  }
 
+  & span {
     @media screen and (width > $tablet-width) {
-      font-size: 16px;
-      line-height: 20px;
-      color: $base-text-color;
-      max-width: 160px;
-      justify-self: flex-end;
-    }
-
-    @media screen and (width > $desktop-width) {
-      text-align: left;
-    }
-
-    & span {
-      @media screen and (width > $tablet-width) {
-        display: block;
-        margin-top: 15px;
-      }
+      display: block;
+      margin-top: 15px;
     }
   }
+}
 }

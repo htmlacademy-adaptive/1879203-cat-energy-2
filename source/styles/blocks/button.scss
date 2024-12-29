@@ -10,13 +10,16 @@
     color: rgba($color: $basic-white, $alpha: 0.3);
   }
 
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+
   @media screen and (width > $tablet-width) {
     padding: 14px 26px;
   }
 
   &--main {
     font-family: $font-family-oswald;
-    font-display: swap;
     color: $basic-white;
     text-transform: uppercase;
     background-color: $bg-basic-green;

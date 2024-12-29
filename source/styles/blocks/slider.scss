@@ -1,8 +1,10 @@
 .slider {
   position: relative;
   height:  256px;
-  width: 100%;
+  // width: 100%;
+  width: 280px;
   display: flex;
+  align-self: center;
 
   @media screen and (width > $tablet-width) {
     margin: 0 auto;
@@ -80,7 +82,8 @@
 
 .slider__button:active,
 .slider__button:active::after {
-  background-color: $bg-basic-green;
+  background-color: $bg-basic-green-2;
+  opacity: 0.6;
 }
 
 .slider__button:hover::before {
@@ -88,5 +91,6 @@
 }
 
 .slider__button:active::before {
-  border-color: $bg-basic-green;
+  border-color: $bg-basic-green-2;
+  opacity: 0.6;
 }
