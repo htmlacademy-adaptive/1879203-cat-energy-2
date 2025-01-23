@@ -141,31 +141,31 @@
 
 
 // стили при выключенном JS
-// .navigation.noJS {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     text-align: center;
-//     height: fit-content;
-//     width: 100%;
+.navigation.noJS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
 
-//  .navigation__link {
-//     display: inline-flex;
-//     font-family: $font-family-oswald;
-//     font-size: 20px;
-//     line-height: 20px;
-//     color: $basic-black;
-//     text-transform: uppercase;
-//     width: auto;
-//     align-items: center;
-//     height: 68px;
-//     padding: 22px 8px;
+ .navigation__link {
+    display: inline-flex;
+    font-family: $font-family-oswald;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-transform: uppercase;
+    width: auto;
+    align-items: center;
+    height: 68px;
+    padding: 22px 8px;
 
-//       @media screen and (width > $desktop-width) {
-//         color: $basic-white;
-//     }
-// }
-//   .navigation + .navigation__toggle {
-//     display: none;
-//  }
-// }
+      @media screen and (width > $desktop-width) {
+        color: $basic-white;
+    }
+}
+  .navigation.noJS .navigation__toggle {
+    display: none;
+ }
+}

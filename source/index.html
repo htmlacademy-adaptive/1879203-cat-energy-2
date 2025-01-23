@@ -32,7 +32,7 @@
         <div class="navigation__container">
           <ul class="navigation__list list-reset">
             <li class="navigation__item">
-              <a class="navigation__link link-reset navigation__link--current navigation__link--main-desktop" href="#">Главная</a>
+              <a class="navigation__link link-reset navigation__link--current navigation__link--main-desktop" href="#" aria-current="page">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link link-reset navigation__link--main-desktop" href="catalog.html">Каталог продукции</a>
@@ -51,10 +51,10 @@
 
   <main class="main">
 
-    <section class="hero" data-test="hero">
+    <section class="hero" data-test="hero" aria-labelledby="hero-heading">
       <div class="container">
         <div class="hero__wrapper">
-          <h1 class="hero__title">Функциональное<br> питание для котов</h1>
+          <h1 class="hero__title" id="hero-heading">Функциональное<br> питание для котов</h1>
           <p class="hero__text">Занялся собой? Займись котом!</p>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="./images/index-hero-desktop@1x.webp 1x, ./images/index-hero-desktop@2x.webp 2x" width="552" height="499">
@@ -65,7 +65,7 @@
             <source type="image/jpg" media="(min-width: 769px)" srcset="./images/index-hero-tablet@1x.jpg 1x, ./images/index-hero-tablet@2x.jpg 2x" width="709" height="609">
             <img class="hero__img" src="./images/index-hero-mobile@1x.png" srcset="./images/index-hero-mobile@2x.webp 2x" alt="картинка еды Cat Energy" width="270" height="280">
           </picture>
-          <a class="hero__link link link--main link-reset" href="program_selection.html">подобрать программу</a>
+          <a class="hero__link link link--main link-reset" href="program_selection.html" aria-label="Подобрать программу для кота">подобрать программу</a>
         </div>
       </div>
     </section>
@@ -77,21 +77,21 @@
           <li class="programs__item programs__item--slim">
             <h3 class="programs__title">Похудение</h3>
             <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link link-reset" href="#">каталог slim</a>
+            <a class="programs__link link-reset" href="#" aria-label="Перейти в каталог для похудения">каталог slim</a>
           </li>
           <li class="programs__item programs__item--muscles">
             <h3 class="programs__title">Набор массы</h3>
             <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link link-reset" href="#">каталог pro</a>
+            <a class="programs__link link-reset" href="#" aria-label="Перейти в каталог для набора массы">каталог pro</a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="benefits" data-test="features">
+    <section class="benefits" aria-labelledby="benefits-heading" data-test="features">
       <div class="container">
         <div class="benefits__wrapper">
-          <h2 class="benefits__title">Как это работает</h2>
+          <h2 class="benefits__title" id="benefits-heading">Как это работает</h2>
           <ol class="benefits__list list-reset">
             <li class="benefits__item benefits__item--leaf">
               <p class="benefits__text">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -121,7 +121,7 @@
 
                 <div class="info__item">
                   <dt class="info-details"><span class="info-details__title info-details__title--weight">5 кг</span></dt>
-                  <dd><span class="info-details__description">снижение веса</span></dd>
+                  <dd class="info-details"><span class="info-details__description">снижение веса</span></dd>
                 </div>
 
                 <div class="info__item">

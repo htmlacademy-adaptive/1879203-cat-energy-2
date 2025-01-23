@@ -18,6 +18,7 @@ removeActiveClass();
 
 // eslint-disable-next-line prefer-arrow-callback
 navToggle.addEventListener('click', function () {
+  nav.classList.remove('noJS');
   nav.classList.toggle('navigation--active');
   navToggle.classList.toggle('active');
   fullPage.classList.toggle('is-lock');
