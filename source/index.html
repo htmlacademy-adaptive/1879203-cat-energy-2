@@ -16,7 +16,7 @@
 
 <body class="page__body">
 
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="header__wrapper container">
       <a class="header__logo link-reset" href="index.html">
         <picture>
@@ -51,7 +51,7 @@
 
   <main class="main">
 
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="container">
         <div class="hero__wrapper">
           <h1 class="hero__title">Функциональное<br> питание для котов</h1>
@@ -70,17 +70,17 @@
       </div>
     </section>
 
-    <section class="programs">
+    <section class="programs" data-test="programs">
       <div class="container">
         <h2 class="visually-hidden">Программы питания для ваших котиков</h2>
         <ul class="programs__list list-reset">
           <li class="programs__item programs__item--slim">
-            <h2 class="programs__title">Похудение</h2>
+            <h3 class="programs__title">Похудение</h3>
             <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programs__link link-reset" href="#">каталог slim</a>
           </li>
           <li class="programs__item programs__item--muscles">
-            <h2 class="programs__title">Набор массы</h2>
+            <h3 class="programs__title">Набор массы</h3>
             <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programs__link link-reset" href="#">каталог pro</a>
           </li>
@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section class="benefits">
+    <section class="benefits" data-test="features">
       <div class="container">
         <div class="benefits__wrapper">
           <h2 class="benefits__title">Как это работает</h2>
@@ -110,7 +110,7 @@
       </div>
     </section>
 
-    <section class="info">
+    <section class="info" data-test="proof">
       <div class="container">
         <div class="info__wrapper">
           <h2 class="info__title">Живой пример</h2>
@@ -158,23 +158,23 @@
       </div>
     </section>
 
-    <section class="map">
+    <section class="map" data-test="contacts">
       <h2 class="visually-hidden">Карта</h2>
       <div class="invitation">
-        <h2 class="invitation__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
-        <p class="invitation__text">ул. Большая<br> Конюшенная, д. 19/8 <span>Санкт-Петербург<span></p>
+        <p class="invitation__title">Приглашаем<br> к сотрудничеству дилеров!</p>
+        <p class="invitation__text">ул. Большая Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
       </div>
       <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10455.525326148256!2d30.32387568988965!3d59.93200727450661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057e07c397%3A0x3438621206462fae!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDExOSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1732444413951!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Наш офис по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
     </section>
 
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__wrapper container">
         <a class="footer__link link-reset" href="#"><img class="footer__logo" src="./images/logo-text.svg" alt="Товарный знак магазина Cat Energy." width="128" height="24"></a>
         <ul class="social list-reset">
-          <li class="social__item"><a class="social__link social__link--vk link-reset" href="#"><span class="visually-hidden">ссылка на наш ВК</span></a></li>
-          <li class="social__item"><a class="social__link social__link--youtube link-reset" href="#"><span class="visually-hidden">ссылка на наш ютуб</span></a></li>
-          <li class="social__item"><a class="social__link social__link--telegram link-reset" href="#"><span class="visually-hidden">ссылка на наш телеграм</span></a></li>
+          <li class="social__item"><a class="social__link social__link--vk link-reset" href="#"><span class="visually-hidden">ВК.</span></a></li>
+          <li class="social__item"><a class="social__link social__link--youtube link-reset" href="#"><span class="visually-hidden">ютуб.</span></a></li>
+          <li class="social__item"><a class="social__link social__link--telegram link-reset" href="#"><span class="visually-hidden">телеграм.</span></a></li>
         </ul>
         <a class="footer__link footer__link--copyright link-reset" href="https://up.htmlacademy.ru/"><span class="copyright_text">HTML Academy</span><svg width="27" height="34"><use href="./icons/stack.svg#icon-html-academy"></use></svg></a>
     </div>

@@ -1,7 +1,7 @@
 .link {
   display: inline-flex;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   padding: 10px 20px;
 
   @media screen and (width > $tablet-width) {

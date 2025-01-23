@@ -96,11 +96,14 @@
       margin-left: 0;
       font-size: 36px;
       line-height: 36px;
+      padding-right: 235px;
+
     }
 
     @media screen and (width > $desktop-width) {
       margin-left: 160px;
       margin-top: 30px;
+      padding-right: 0;
     }
   }
 
@@ -137,12 +140,13 @@
     font-weight: 400;
     color: $basic-black;
     text-transform: uppercase;
-    display: block;
-    width: 165px;
+    display: flex;
+    min-width: 230px;
     height: 24px;
     position: relative;
-    padding: 15px 15px 20px 5px;
-    margin-left: -5px;
+    padding: 15px 15px 20px 0;
+    gap: 10px;
+    align-items: center;
 
     &:hover,
     &:active {
@@ -152,22 +156,19 @@
     @media screen and (width > $tablet-width) {
       font-size: 20px;
       line-height: 20px;
-      padding: 15px 35px 15px 15px;
+      padding: 15px 35px 15px 0;
       height: 48px;
-      margin-left: -15px;
      }
 
     &::after {
       content: '';
-      position: absolute;
       display: block;
       width: 24px;
       height: 12px;
       background-image: url('../../icons/stack.svg#icon-arrow');
       background-size: 24px 12px;
       background-repeat: no-repeat;
-      top: 49%;
-      left: 60%;
+
 
       @media screen and (width > $tablet-width) {
         left: 86%;

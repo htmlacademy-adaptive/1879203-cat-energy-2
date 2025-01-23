@@ -72,13 +72,23 @@
     @media screen and (width > $tablet-width) {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 98px;
+      // margin-bottom: 98px;
      }
 
      @media screen and (width > $desktop-width) {
       flex-direction: column;
       flex-wrap: wrap;
-      margin-bottom: 67px;
+      // margin-bottom: 67px;
+     }
+  }
+
+  &__text-wrapper {
+    @media screen and (width > $tablet-width) {
+      margin-bottom: 98px;
+     }
+
+   @media screen and (width > $desktop-width) {
+    margin-bottom: 67px;
      }
   }
 
