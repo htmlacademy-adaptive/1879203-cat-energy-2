@@ -141,7 +141,7 @@
 
 
 // стили при выключенном JS
-.navigation.noJS {
+.navigation.nojs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,7 +165,7 @@
         color: $basic-white;
     }
 }
-  .navigation.noJS .navigation__toggle {
+  .navigation.nojs .navigation__toggle {
     display: none;
  }
 }

@@ -1,6 +1,8 @@
 const nav = document.querySelector('.navigation');
 const navToggle = document.querySelector('.navigation__toggle');
 const fullPage = document.querySelector('.page');
+nav.classList.remove('nojs');
+
 
 function getWindowWidth() {
   return window.innerWidth;
@@ -18,7 +20,6 @@ removeActiveClass();
 
 // eslint-disable-next-line prefer-arrow-callback
 navToggle.addEventListener('click', function () {
-  nav.classList.remove('noJS');
   nav.classList.toggle('navigation--active');
   navToggle.classList.toggle('active');
   fullPage.classList.toggle('is-lock');
