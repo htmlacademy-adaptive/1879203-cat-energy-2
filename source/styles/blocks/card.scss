@@ -1,0 +1,113 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-block: 20px;
+  position: relative;
+  box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: $grey-d9d9d9;
+    box-shadow: 100vw 0 0 $grey-d9d9d9;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (width > $tablet-width) {
+      display: none;
+   }
+  }
+
+  @media screen and (width > $tablet-width) {
+    border: none;
+    padding: 0 37px 40px;
+    background: linear-gradient(to bottom, $basic-white 17%, $grey-f2f2f2 10%);
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (width > $desktop-width) {
+    max-width: 245px;
+  }
+
+  &__wrapper {
+    @media screen and (width > $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 76px;
+    color: $black-222222;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 135px;
+      text-align: center;
+    }
+  }
+
+  &__details {
+    color: $base-text-color;
+    font-family: $font-family-lato;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 64px;
+    margin-bottom: 17px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      gap: 5px 0;
+      width: 250px;
+      margin-bottom: 31px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      max-width: 180px;
+    }
+  }
+
+  &__value {
+    text-align: right;
+  }
+
+  &__value, &__characteristiс {
+    @media screen and (width > $tablet-width) {
+      border-bottom: 1 solid $grey-cdcdcd;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (width > $tablet-width) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
+

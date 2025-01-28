@@ -1,0 +1,188 @@
+.info {
+  padding-block: 20px;
+  background-color: $grey-eaeaea;
+  margin: 0 auto;
+
+  @media screen and (width > $tablet-width) {
+    background: linear-gradient(to bottom, $basic-white 61%, $grey-eaeaea 39%);
+  }
+
+  @media screen and (width > $desktop-width) {
+    background: linear-gradient(to bottom, $basic-white 23%, $grey-eaeaea 10%);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+
+    @media screen and (width > $tablet-width) {
+      width: 708px;
+     }
+
+     @media screen and (width > $desktop-width) {
+      width: 1220px;
+      max-height: 800px;
+     }
+
+  }
+
+  &__title {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: $basic-black;
+    margin-bottom: 40px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 60px;
+     }
+
+     @media screen and (width > $desktop-width) {
+      margin-bottom: 145px;
+     }
+  }
+
+  &__text {
+    font-family: $font-family-lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 34px;
+    color: $base-text-color;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 66px;
+     }
+
+     @media screen and (width > $desktop-width) {
+      width: 433px;
+      margin-bottom: 81px;
+     }
+  }
+
+  &__example {
+    @media screen and (width > $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      // margin-bottom: 98px;
+     }
+
+     @media screen and (width > $desktop-width) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      // margin-bottom: 67px;
+     }
+  }
+
+  &__text-wrapper {
+    @media screen and (width > $tablet-width) {
+      margin-bottom: 98px;
+     }
+
+   @media screen and (width > $desktop-width) {
+    margin-bottom: 67px;
+     }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 124px 124px;
+    gap: 32px;
+    align-items: unset;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @media screen and (width > $tablet-width) {
+      margin: 0;
+      grid-template-columns: 162px 162px;
+      gap: 43px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      margin-bottom: 53px;
+      gap: 53px;
+      justify-content: left;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (width > $tablet-width) {
+      flex-direction: column;
+      align-items: flex-end;
+     }
+
+     @media screen and (width > $desktop-width) {
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 68px;
+      justify-content: flex-start;
+     }
+  }
+
+  &__result-text {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $basic-black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (width > $tablet-width) {
+      max-width: 175px;
+      font-size: 20px;
+      line-height: 22px;
+      text-align: right;
+      margin: 0;
+      margin-bottom: 5px;
+     }
+
+     @media screen and (width > $desktop-width) {
+      flex-direction: row;
+      max-width: 330px;
+      justify-content: space-between;
+      margin-bottom: 0;
+     }
+  }
+
+  &__result-price {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $basic-black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 22px;
+      text-align: right;
+      margin: 0;
+     }
+  }
+}

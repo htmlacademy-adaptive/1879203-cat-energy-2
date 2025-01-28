@@ -1,0 +1,171 @@
+.navigation {
+  display: none;
+
+  @media screen and (width > $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container {
+    width: 100%;
+  }
+
+  &__item {
+    @media screen and (width > $tablet-width) {
+      border: none;
+    }
+  }
+
+  &__link {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-transform: uppercase;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+
+    @media screen and (width > $tablet-width) {
+      font-size: 18px;
+      line-height: 24px;
+      padding : 14px;
+      display: inline-flex;
+      text-align: center;
+      position: relative;
+
+      &--current::after {
+        position: absolute;
+        content: "";
+        right: 12px;
+        left: 13px;
+        bottom: 8px;
+        height: 2px;
+        background-color: $bg-basic-green;
+      }
+
+          &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (width > $desktop-width) {
+      font-size: 20px;
+      line-height: 29px;
+
+      &--main-desktop {
+        z-index: 2;
+        color: $basic-white;
+      }
+
+      &--current.navigation__link--main-desktop::after {
+        position: absolute;
+        content: "";
+        right: 12px;
+        left: 13px;
+        bottom: 8px;
+        height: 2px;
+        background-color: $basic-white;
+      }
+    }
+  }
+
+  &__list {
+
+    @media screen and (width > $tablet-width) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      min-width: 436px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      justify-self: right;
+    }
+  }
+}
+
+
+// стили для выпадающего меню
+.navigation.navigation--active {
+  @media screen and (width < $tablet-width) {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    top: 67px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    overflow-y: auto;
+    background-color: $basic-white;
+  }
+
+  .navigation__container {
+    position: sticky;
+    top: 0;
+  }
+
+  .navigation__item {
+      border-bottom: 1px solid $grey-e6e6e6;
+
+      &:first-child {
+        border-top: 1px solid $grey-e6e6e6;
+      }
+    }
+
+    .navigation__link {
+      display: inline-flex;
+      font-family: $font-family-oswald;
+      font-size: 20px;
+      line-height: 20px;
+      color: $basic-black;
+      text-transform: uppercase;
+      width: auto;
+      align-items: center;
+      height: 68px;
+      padding: 22px 8px;
+    }
+  }
+
+
+// стили при выключенном JS
+.navigation.nojs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+
+ .navigation__link {
+    display: inline-flex;
+    font-family: $font-family-oswald;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-transform: uppercase;
+    width: auto;
+    align-items: center;
+    height: 68px;
+    padding: 22px 8px;
+
+      @media screen and (width > $desktop-width) {
+        color: $basic-white;
+    }
+}
+  .navigation.nojs .navigation__toggle {
+    display: none;
+ }
+}

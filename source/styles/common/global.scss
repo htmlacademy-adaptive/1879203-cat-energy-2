@@ -1,1 +1,49 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+	&.is-lock {
+	overflow: hidden;
+	}
+}
+
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  color: $base-text-color; //#444444 = special-dark-grey;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+dd {
+  margin: 0;
+}
+
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl
+):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+

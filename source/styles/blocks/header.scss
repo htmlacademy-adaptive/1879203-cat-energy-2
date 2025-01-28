@@ -1,5 +1,73 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  @media screen and (width > $tablet-width) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media screen and (width > $desktop-width) {
+    max-width: 1220px;
+  }
+
+  &__wrapper {
+    background-color: $basic-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 13px;
+    width: 100%;
+    min-height: 65px;
+    position: relative;
+
+    @media screen and (width > $tablet-width) {
+      padding-block: 25px 20px;
+      padding-inline: 0;
+
+    }
+
+    @media screen and (width > $desktop-width) {
+      padding-block: 55px 20px;
+    }
+  }
+
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo picture {
+    display: inline-block;
+
+    @media screen and (width > $tablet-width) {
+        margin-right: 14px;
+      }
+    }
+
+  &__logo--text {
+    margin: 0;
+
+    @media screen and (width > $tablet-width) {
+      margin-right: auto;
+    }
+
+    img {
+      vertical-align: middle;
+
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &--border-bottom {
+
+    @media screen and (width < $tablet-width) {
+      border-bottom: $border;
+    }
+  }
 }

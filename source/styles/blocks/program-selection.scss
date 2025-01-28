@@ -1,0 +1,43 @@
+.program-selection {
+
+  &__wrapper {
+    @media screen and (width > $tablet-width) {
+      max-width: 708px;
+      margin: 0 auto;
+    }
+
+    @media screen and (width > $desktop-width) {
+      max-width: 1220px;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: $basic-black;
+    margin-block: 27px 37px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+
+  &__text {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $basic-black;
+    margin-bottom: 39px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 66px;
+      max-width: 320px;
+    }
+  }
+}

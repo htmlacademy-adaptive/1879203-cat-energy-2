@@ -1,0 +1,86 @@
+.footer {
+  background-color: $grey-f2f2f2;
+  padding-block: 40px;
+
+  @media screen and (width > $tablet-width) {
+    padding-block: 55px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (width > $tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 708px;
+      margin: 0 auto;
+    }
+
+    @media screen and (width > $desktop-width) {
+      max-width: 1220px;
+      padding-inline: 0;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+
+    @media screen and (width > $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &__link--copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @media screen and (width > $tablet-width) {
+      justify-content: right;
+      width: 168px;
+    }
+
+    svg {
+      color: $grey-666666;
+    }
+
+    span {
+      text-wrap: nowrap;
+      display: block;
+      font-family: $font-family-lato;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $base-text-color;
+
+
+      @media screen and (width > $tablet-width) {
+        margin-right: 23px;
+        text-wrap: nowrap;
+      }
+    }
+
+    &:hover svg,
+    &:focus svg {
+      color: $bg-basic-green;
+    }
+
+    &:active{
+      color: $bg-basic-green;
+      opacity: 0.3;
+    }
+  }
+}

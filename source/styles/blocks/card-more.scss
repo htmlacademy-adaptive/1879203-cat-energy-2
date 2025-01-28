@@ -1,0 +1,116 @@
+.card-more {
+  padding: 78px 20px 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
+
+  background-image: url('../../icons/stack.svg#icon-plus');
+  background-repeat: no-repeat;
+  background-position: center 25px;
+  background-size: 30px 30px;
+
+
+  @media screen and (width > $tablet-width) {
+    padding: 160px 37px 40px;
+    border: 2px solid $grey-f2f2f2;
+    min-height: 395px;
+    align-self: flex-end;
+    justify-content: flex-end;
+    background-position: center 50px;
+    background-size: 60px 60px;
+  }
+
+  @media screen and (width > $desktop-width) {
+    max-width: 245px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: $grey-d9d9d9;
+    box-shadow: 100vw 0 0 $grey-d9d9d9;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (width > $tablet-width) {
+      display: none;
+   }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 23px;
+
+    @media screen and (width > $tablet-width) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $black-111111;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    position: relative;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 170px;
+      text-align: center;
+      margin-bottom: 21px;
+    }
+
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: -50px;
+    //   left: 86px;
+    //   width: 30px;
+    //   height: 30px;
+    //   background-image: url('../../icons/stack.svg#icon-plus');
+
+    //   @media screen and (width > $tablet-width) {
+    //     top: -100px;
+    //     left: 50px;
+    //     width: 60px;
+    //     height: 60px;
+    //   }
+    // }
+  }
+
+  &__text {
+    font-family: $font-family-lato;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $base-text-color;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      max-width: 170px;
+      text-align: center;
+      // margin-bottom: 49px;
+    }
+  }
+}

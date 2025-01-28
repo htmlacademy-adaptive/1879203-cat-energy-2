@@ -1,0 +1,119 @@
+.benefits {
+  margin-top: 0;
+  padding-bottom: 49px;
+
+  @media screen and (width > $desktop-width) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media screen and (width > $desktop-width) {
+    max-width: 1220px;
+  }
+
+  &__wrapper {
+    display: grid;
+    // justify-content: center;
+  }
+
+  &__title {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: $basic-black;
+    margin-bottom: 40px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+     }
+  }
+
+  &__list {
+    display: grid;
+    counter-reset: benefits-counter 0;
+
+    @media screen and (width > $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+      gap: 37px 135px;
+     }
+
+     @media screen and (width > $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 37px 80px;
+     }
+  }
+
+  &__item {
+    background-image: url('../../icons/stack.svg#icon-leaf');
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: 0 -3px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    @media screen and (width > $tablet-width) {
+      max-width: 250px;
+      padding-top: 65px;
+      counter-increment: benefits-counter 1;
+
+      &::after {
+        content: counter(benefits-counter);
+        font-size: 280px;
+        line-height: 280px;
+        color: $grey-f2f2f2;
+        font-family: $font-family-oswald;
+        z-index: -1;
+        margin-left: -80px;
+        margin-top: -105px;
+
+          @media screen and (width > $desktop-width) {
+            margin-left: -115px;
+          }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+     }
+
+
+  }
+
+  &__text {
+    font-family: $font-family-lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 80px;
+    color: $base-text-color;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+    }
+
+    @media screen and (width > $desktop-width) {
+      min-width: 242px;
+    }
+  }
+
+  &__item--water {
+    background-image: url(../../icons/stack.svg#icon-water);
+  }
+
+  &__item--meal {
+    background-image: url(../../icons/stack.svg#icon-meal);
+  }
+
+  &__item--scales {
+    background-image: url(../../icons/stack.svg#icon-scales);
+  }
+}

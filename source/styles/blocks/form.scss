@@ -1,0 +1,344 @@
+.form {
+  width: 100%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+
+      @media screen and (width > $tablet-width) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &--owner-info {
+      position: relative;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-oswald;
+    font-size: 24px;
+    line-height: 26px;
+    color: $basic-black;
+    font-weight: 400;
+    padding: 0;
+    margin-bottom: 35px;
+    display: block;
+    position: relative;
+    background-color: $basic-white;
+    box-shadow: -20px 0 0 $basic-white, 20px 0 0 $basic-white;
+    max-width: 187px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100vw;
+      height: 2px;
+      background-color: $bg-basic-green;
+      box-shadow: 100vw 0 0 $bg-basic-green;
+      top: 0.7em;
+      right: 0;
+      z-index: -1;
+    }
+
+    @media screen and (width > $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 76px;
+      box-shadow: -40px 0 0 $basic-white, 40px 0 0 $basic-white;
+      max-width: fit-content;
+    }
+
+  }
+
+  &__label {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $base-text-color;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 13px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &__input {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $grey-cdcdcd;
+    border-radius: 50%;
+
+    &--radio {
+      background-size: 13px 13px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:checked {
+        background-image: url('../../icons/stack.svg#icon-radiobutton-active');
+        border-color: $grey-BABABA;
+      }
+
+      &:disabled,
+      &:disabled + span {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+    }
+
+    &--checkbox {
+      border-radius: 0;
+
+      &:checked {
+        background-image: url('../../icons/stack.svg#icon-tick');
+        border-color: $grey-BABABA;
+      }
+
+      &:disabled,
+      &:disabled + span {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+    }
+
+  }
+
+  &__icon {
+    position: absolute;
+    right: 14px;
+  }
+
+  &__button {
+    margin-bottom: 21px;
+    // width: 100%;
+    height: 40px;
+
+    @media screen and (width > $tablet-width) {
+      width: 284px;
+      padding: 7px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      width: 570px;
+      padding: 14px;
+    }
+  }
+
+  &__comment {
+    font-family: $font-family-lato;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    text-align: center;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 16px;
+    }
+  }
+
+  &__container {
+    margin-bottom: 26px;
+
+    @media screen and (width > $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
+      margin-bottom: 68px;
+   }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (width > $tablet-width) {
+      flex-direction: row;
+      gap: 60px;
+      align-items: baseline;
+   }
+
+   @media screen and (width > $tablet-width) {
+      gap: 80px;
+  }
+  }
+
+  &--main {
+    padding-bottom: 32px;
+   }
+
+  &--basic-info {
+    padding-bottom: 18px;
+    position: relative;
+    box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
+
+    @media screen and (width > $tablet-width) {
+      margin-bottom: 55px;
+   }
+
+   @media screen and (width > $desktop-width) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+ }
+
+   &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100vw;
+      height: 2px;
+      background-color: $grey-d9d9d9;
+      box-shadow: 100vw 0 0 $grey-d9d9d9;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+
+      @media screen and (width > $tablet-width) {
+        display: none;
+     }
+    }
+  }
+
+  &--program-selection {
+    padding-block: 20px;
+    position: relative;
+    box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
+
+   &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100vw;
+      height: 2px;
+      background-color: #D9D9D9;
+      box-shadow: 100vw 0 0 #D9D9D9;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+
+      @media screen and (width > $tablet-width) {
+        display: none;
+     }
+    }
+
+    @media screen and (width > $tablet-width) {
+      border-bottom: 0;
+      border: $border;
+      padding: 23px 27px;
+   }
+  }
+
+   &--owner-info {
+    margin-bottom: 24px;
+
+    @media screen and (width > $tablet-width) {
+      margin-bottom: 65px;
+  }
+}
+
+   &--basic-info,
+   &--owner-info {
+    input {
+      width: 100%;
+      height: 45px;
+      padding: 13px;
+      border: 1px solid $grey-E7E7E7;
+      font-family: $font-family-oswald;
+      font-size: 16px;
+      line-height: 18px;
+      color: $base-text-color;
+      text-transform: uppercase;
+
+      &:hover {
+        border: 1px solid $grey-cdcdcd;
+      }
+
+
+      &:focus {
+        border: 1px solid $base-text-color;
+      }
+
+      &:focus + .form__icon {
+        color: $bg-basic-green;
+      }
+
+      &:user-invalid {
+        border: 1px solid $pink-basic;
+      }
+
+      &:user-invalid + .form__icon {
+        color: $pink-basic;
+      }
+    }
+   }
+
+   &--comment {
+    padding-bottom: 23px;
+
+      @media screen and (width > $tablet-width) {
+      padding-bottom: 65px;
+    }
+
+    textarea {
+      font-family: $font-family-oswald;
+      font-size: 16px;
+      line-height: 18px;
+      color: $base-text-color;
+      text-transform: uppercase;
+      width: 100%;
+      border: 1px solid $grey-cdcdcd;
+      padding: 14px;
+      text-align: left;
+
+        @media screen and (width > $tablet-width) {
+          padding: 11px 20px;
+      }
+    }
+   }
+
+   &--additional {
+      margin-bottom: 34px;
+  }
+
+   &--additional .form__list {
+    @media screen and (width > $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px 123px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 65px;
+      row-gap: 32px;
+    }
+   }
+
+   &--owner-info .form__list {
+    @media screen and (width > $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
+    }
+   }
+}
+
+
