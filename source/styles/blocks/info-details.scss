@@ -1,4 +1,7 @@
 .info-details {
+  @media screen and (width > $tablet-width) {
+    margin-top: -9px;
+  }
 
   &__title {
     font-family: $font-family-oswald;
@@ -13,7 +16,7 @@
     @media screen and (width > $tablet-width) {
       font-size: 30px;
       line-height: 37px;
-      margin-bottom: 9px;
+      margin-bottom: 20px;
     }
 
     &--weight {
@@ -31,7 +34,7 @@
         @media screen and (width > $tablet-width) {
           width: 162px;
           height: 77px;
-          top: -18px;
+          top: -26px;
         }
     }
   }
@@ -50,7 +53,7 @@
           @media screen and (width > $tablet-width) {
             width: 162px;
             height: 77px;
-            top: -18px;
+            top: -26px;
             right: -3px;
           }
         }

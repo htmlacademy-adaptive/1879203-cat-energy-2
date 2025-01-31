@@ -20,12 +20,13 @@
   @media screen and (width > $desktop-width) {
     position: absolute;
     left: 110px;
-    top: 95px;
+    top: 104px;
     max-width: 565px;
     height: 199px;
     background-color: $basic-white;
     column-gap: 0;
     padding-inline: 78px;
+    gap: 94px;
   }
 
 &__title {
@@ -47,14 +48,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  text-align: right;
 
   @media screen and (width > $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     color: $base-text-color;
-    // max-width: 160px;
     justify-self: flex-end;
+    text-align: right;
   }
 
   @media screen and (width > $desktop-width) {
@@ -64,7 +64,7 @@
   & span {
     @media screen and (width > $tablet-width) {
       display: block;
-      margin-top: 15px;
+      margin-top: 18px;
     }
   }
 }

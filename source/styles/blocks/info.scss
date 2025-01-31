@@ -1,14 +1,16 @@
 .info {
-  padding-block: 20px;
+  padding-block: 20px 40px;
   background-color: $grey-eaeaea;
   margin: 0 auto;
 
   @media screen and (width > $tablet-width) {
     background: linear-gradient(to bottom, $basic-white 61%, $grey-eaeaea 39%);
+    padding-bottom: 104px;
   }
 
   @media screen and (width > $desktop-width) {
     background: linear-gradient(to bottom, $basic-white 23%, $grey-eaeaea 10%);
+    padding-bottom: 0;
   }
 
   &__wrapper {
@@ -59,12 +61,12 @@
     @media screen and (width > $tablet-width) {
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 66px;
+      margin-bottom: 78px;
      }
 
      @media screen and (width > $desktop-width) {
       width: 433px;
-      margin-bottom: 81px;
+      margin-bottom: 94px;
      }
   }
 
@@ -104,12 +106,12 @@
     @media screen and (width > $tablet-width) {
       margin: 0;
       grid-template-columns: 162px 162px;
-      gap: 43px;
+      gap: 40px;
     }
 
     @media screen and (width > $desktop-width) {
       margin-bottom: 53px;
-      gap: 53px;
+      gap: 41px;
       justify-content: left;
     }
   }
@@ -156,16 +158,15 @@
       font-size: 20px;
       line-height: 22px;
       text-align: right;
-      margin: 0;
-      margin-bottom: 5px;
+      margin: -30px 4px 5px;
      }
 
      @media screen and (width > $desktop-width) {
       flex-direction: row;
       max-width: 330px;
       justify-content: space-between;
-      margin-bottom: 0;
-     }
+      margin: 0;
+    }
   }
 
   &__result-price {

@@ -1,19 +1,19 @@
 .benefits {
   margin-top: 0;
-  padding-bottom: 49px;
+  padding-bottom: 54px;
 
-  @media screen and (width > $desktop-width) {
+  @media screen and (width > $tablet-width) {
     max-width: 708px;
-    margin: 0 auto;
+    padding-bottom: 76px;
   }
 
   @media screen and (width > $desktop-width) {
     max-width: 1220px;
+    padding-bottom: 43px;
   }
 
   &__wrapper {
     display: grid;
-    // justify-content: center;
   }
 
   &__title {
@@ -27,6 +27,12 @@
     @media screen and (width > $tablet-width) {
       font-size: 60px;
       line-height: 60px;
+      margin-bottom: 72px;
+      margin-left: 10px;
+     }
+
+     @media screen and (width > $tablet-width) {
+      margin-left: 30px;
      }
   }
 
@@ -36,7 +42,7 @@
 
     @media screen and (width > $tablet-width) {
       grid-template-columns: 1fr 1fr;
-      gap: 37px 135px;
+      gap: 84px 98px;
      }
 
      @media screen and (width > $desktop-width) {
@@ -55,13 +61,18 @@
     align-items: center;
 
     &:not(:last-child) {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     @media screen and (width > $tablet-width) {
       max-width: 250px;
-      padding-top: 65px;
+      padding-top: 46px;
       counter-increment: benefits-counter 1;
+      background-size: 100px 82px;
+
+      @media screen and (width > $desktop-width) {
+        background-position: 18px -2px;
+      }
 
       &::after {
         content: counter(benefits-counter);
@@ -71,10 +82,15 @@
         font-family: $font-family-oswald;
         z-index: -1;
         margin-left: -80px;
-        margin-top: -105px;
+        margin-top: -98px;
+
+        @media screen and (width > $tablet-width) {
+          margin-left: -134px;
+          margin-top: -102px;
+        }
 
           @media screen and (width > $desktop-width) {
-            margin-left: -115px;
+            margin-left: -126px;
           }
       }
 
@@ -98,22 +114,36 @@
       font-size: 16px;
       line-height: 24px;
       margin: 0;
+      margin-left: 10px;
     }
 
     @media screen and (width > $desktop-width) {
       min-width: 242px;
+      margin-left: 22px;
     }
   }
 
   &__item--water {
     background-image: url(../../icons/stack.svg#icon-water);
+
+    @media screen and (width > $tablet-width) {
+      padding-top: 68px;
+     }
   }
 
   &__item--meal {
     background-image: url(../../icons/stack.svg#icon-meal);
+    background-position: 0 -15px;
+    @media screen and (width > $desktop-width) {
+      background-position: 16 -2px;
+    }
   }
 
   &__item--scales {
     background-image: url(../../icons/stack.svg#icon-scales);
+
+    @media screen and (width > $desktop-width) {
+      background-position: 10 -2px;
+    }
   }
 }
