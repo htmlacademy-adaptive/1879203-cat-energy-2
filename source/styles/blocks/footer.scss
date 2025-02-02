@@ -3,7 +3,17 @@
   padding-block: 40px;
 
   @media screen and (width > $tablet-width) {
-    padding-block: 55px;
+    padding-block: 57px;
+  }
+
+  @media screen and (width > $desktop-width) {
+    padding-block: 60px;
+  }
+
+  &--program-page {
+    @media screen and (width > $desktop-width) {
+      padding-block: 81px;
+    }
   }
 
   &__wrapper {
@@ -17,6 +27,7 @@
       justify-content: space-between;
       max-width: 708px;
       margin: 0 auto;
+      padding: 0;
     }
 
     @media screen and (width > $desktop-width) {
@@ -39,6 +50,16 @@
 
     &:active {
       opacity: 0.6;
+    }
+  }
+
+  &__link img {
+    @media screen and (width > $tablet-width) {
+      margin-right: 166px;
+    }
+
+    @media screen and (width > $tablet-width) {
+      margin-right: 101px;
     }
   }
 

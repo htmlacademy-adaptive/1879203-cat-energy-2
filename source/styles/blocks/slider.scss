@@ -1,7 +1,6 @@
 .slider {
   position: relative;
   height:  256px;
-  // width: 100%;
   width: 280px;
   display: flex;
   align-self: center;
@@ -10,6 +9,10 @@
     margin: 0 auto;
     width: 560px;
     height:  512px;
+  }
+
+  @media screen and (width > $desktop-width) {
+    margin-inline: -112px;
   }
 
   & img {

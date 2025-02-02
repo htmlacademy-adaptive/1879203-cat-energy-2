@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
 
+  @media screen and (width > $tablet-width) {
+    padding-bottom: 45px;
+  }
+
   &__wrapper{
     @media screen and (width > $tablet-width) {
       max-width: 708px;
@@ -20,7 +24,7 @@
     font-size: 36px;
     line-height: 36px;
     color: $basic-black;
-    padding-block: 27px 41px;
+    padding-block: 25px 42px;
     width: 100%;
     position: relative;
 
@@ -44,6 +48,7 @@
     @media screen and (width > $tablet-width) {
       font-size: 60px;
       line-height: 60px;
+      padding-block: 43px 94px;
     }
   }
 
@@ -51,7 +56,7 @@
     @media screen and (width > $tablet-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 60px;
+      gap: 65px 59px;
       align-items: flex-start;
     }
 

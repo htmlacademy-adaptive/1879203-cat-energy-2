@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   min-height: 480px;
-  padding-block: 20px 27px;
+  padding-block: 20px 25px;
   font-family: $font-family-oswald;
   font-weight: 400;
   color: $basic-white;
@@ -22,23 +22,25 @@
     background-image: none;
     background-color: $basic-white;
     color:  $basic-black;
-    padding-top: 40px;
+    padding-top: 42px;
     max-width: 708px;
     margin: 0 auto;
+    padding-top: 88px;
 
     }
 
   @media screen and (width > $desktop-width) {
     max-width: 1220px;
     height: 600px;
+    margin-bottom: 39px;
 
      &::before {
        content: '';
-       width: 51%;
-       height: 650px;
+       width: 50%;
+       height: 694px;
        position: absolute;
        top: 0;
-       left: 49%;
+       left: 50%;
        background:
                 linear-gradient(to right, $gradient-green, $gradient-green),
                 image-set(
@@ -67,9 +69,9 @@
   &__title {
     font-size: 36px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 39px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 
     @media screen and (width > $tablet-width) {
       max-width: 450px;
@@ -78,7 +80,7 @@
       line-height: 60px;
       display: block;
       margin-bottom: 40px;
-      margin-left: 40px;
+      margin-left: 71px;
     }
 
     @media screen and (width > $desktop-width) {
@@ -91,7 +93,7 @@
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;
-    margin-bottom: 29px;
+    margin-bottom: 33px;
     text-transform: uppercase;
 
     @media screen and (width > $tablet-width) {
@@ -99,12 +101,13 @@
       font-size: 20px;
       line-height: 20px;
       display: block;
-      margin-bottom: 50px;
-      margin-left: 40px;
+      margin-bottom: 20px;
+      margin-left: 71px;
     }
 
     @media screen and (width > $desktop-width) {
       margin-left: 0;
+      margin-bottom: 51px;
     }
   }
 
@@ -113,8 +116,8 @@
       width: 244px;
       height: 54px;
       position: absolute;
-      top: 235px;
-      margin-left: 40px;
+      top: 230px;
+      margin-left: 71px;
       font-size: 20px;
       line-height: 26px;
     }
@@ -135,7 +138,7 @@
       top: 0;
       z-index: 2;
       height: 499px;
-      margin-top: -30px;
+      margin-top: -80px;
     }
   }
 }

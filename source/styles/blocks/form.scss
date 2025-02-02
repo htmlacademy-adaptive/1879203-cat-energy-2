@@ -5,12 +5,21 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 14px;
+
+    &--radio {
+      gap: 8px;
+    }
+
+    @media screen and (width > $tablet-width) {
+      gap: 0;
+    }
   }
 
   &__item {
 
     &:not(:last-child) {
-      margin-bottom: 12px;
+      //margin-bottom: 12px;
 
       @media screen and (width > $tablet-width) {
         margin-bottom: 20px;
@@ -55,6 +64,14 @@
       margin-bottom: 76px;
       box-shadow: -40px 0 0 $basic-white, 40px 0 0 $basic-white;
       max-width: fit-content;
+
+      &--comment {
+        margin-bottom: 81px;
+      };
+
+      &--additional {
+        margin-bottom: 60px;
+      };
     }
 
   }
@@ -74,6 +91,22 @@
     @media screen and (width > $tablet-width) {
       font-size: 20px;
       line-height: 20px;
+    }
+
+    &--radio {
+      gap: 8px;
+
+      @media screen and (width > $tablet-width) {
+        gap: 21px;
+      }
+    }
+
+    &--checkbox {
+      gap: 10px;
+
+      @media screen and (width > $tablet-width) {
+        gap: 23px;
+      }
     }
   }
 
@@ -125,17 +158,18 @@
 
   &__button {
     margin-bottom: 21px;
-    // width: 100%;
-    height: 40px;
 
     @media screen and (width > $tablet-width) {
-      width: 284px;
+      width: 270px;
       padding: 7px;
+      min-height: 40px;
+      font-size: 20px;
     }
 
     @media screen and (width > $desktop-width) {
-      width: 570px;
-      padding: 14px;
+      width: 560px;
+      padding: 6px;
+      min-height: 5px;
     }
   }
 
@@ -172,32 +206,53 @@
 
     @media screen and (width > $tablet-width) {
       flex-direction: row;
-      gap: 60px;
+      gap: 57px;
       align-items: baseline;
-   }
+    }
 
-   @media screen and (width > $tablet-width) {
+    @media screen and (width > $desktop-width) {
       gap: 80px;
-  }
+    }
   }
 
   &--main {
     padding-bottom: 32px;
+
+    @media screen and (width > $tablet-width) {
+      padding-bottom: 40px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      padding-bottom: 58px;
+    }
+
    }
 
   &--basic-info {
-    padding-bottom: 18px;
+    padding-bottom: 26px;
     position: relative;
     box-shadow: 0 0 0 $basic-white, 0 0 0 $basic-white;
 
     @media screen and (width > $tablet-width) {
-      margin-bottom: 55px;
+      margin-bottom: 46px;
+
+      input {
+        width: 100%;
+        height: 52px;
+        padding:17px 10px 10px 20px;
+        border: 1px solid $grey-E7E7E7;
+        font-family: $font-family-oswald;
+        font-size: 16px;
+        line-height: 18px;
+        color: $base-text-color;
+        text-transform: uppercase;
+      }
    }
 
    @media screen and (width > $desktop-width) {
     margin-bottom: 0;
     padding-bottom: 0;
- }
+    }
 
    &::after {
       content: '';
@@ -242,7 +297,7 @@
     @media screen and (width > $tablet-width) {
       border-bottom: 0;
       border: $border;
-      padding: 23px 27px;
+      padding: 28px 27px;
    }
   }
 
@@ -252,14 +307,18 @@
     @media screen and (width > $tablet-width) {
       margin-bottom: 65px;
   }
+
+  @media screen and (width > $tablet-width) {
+    margin-bottom: 47px;
+}
 }
 
    &--basic-info,
    &--owner-info {
     input {
       width: 100%;
-      height: 45px;
-      padding: 13px;
+      height: 52px;
+      padding: 17px 10px 10px 20px;
       border: 1px solid $grey-E7E7E7;
       font-family: $font-family-oswald;
       font-size: 16px;
@@ -291,10 +350,10 @@
    }
 
    &--comment {
-    padding-bottom: 23px;
+    padding-bottom: 15px;
 
       @media screen and (width > $tablet-width) {
-      padding-bottom: 65px;
+      padding-bottom: 70px;
     }
 
     textarea {
@@ -305,30 +364,38 @@
       text-transform: uppercase;
       width: 100%;
       border: 1px solid $grey-cdcdcd;
-      padding: 14px;
+      padding: 15px;
       text-align: left;
 
         @media screen and (width > $tablet-width) {
-          padding: 11px 20px;
+          padding: 22px 20px;
+          font-size: 20px;
+        }
+
+        @media screen and (width > $desktop-width) {
+          padding-top: 14px;
+          padding-bottom: 30px;
       }
     }
    }
 
    &--additional {
-      margin-bottom: 34px;
+      margin-bottom: 3px;
   }
 
    &--additional .form__list {
     @media screen and (width > $tablet-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 32px 123px;
+      gap: 15px 51px;
+      margin-bottom: 31px;
     }
 
     @media screen and (width > $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
       column-gap: 65px;
       row-gap: 32px;
+      margin-bottom: 37px;
     }
    }
 
