@@ -3,11 +3,12 @@
   &__wrapper {
     @media screen and (width > $tablet-width) {
       max-width: 708px;
-      margin: 0 auto;
+      margin: 0 50px;
     }
 
     @media screen and (width > $desktop-width) {
       max-width: 1220px;
+      margin: 0 30px;
     }
   }
 
@@ -17,11 +18,16 @@
     font-size: 36px;
     line-height: 36px;
     color: $basic-black;
-    margin-block: 27px 37px;
+    margin-block: 27px 34px;
 
     @media screen and (width > $tablet-width) {
       font-size: 60px;
       line-height: 60px;
+      margin-block: 40px 56px;
+    }
+
+    @media screen and (width > $desktop-width) {
+      margin-block: 53px 56px;
     }
   }
 
@@ -32,6 +38,7 @@
     line-height: 18px;
     color: $basic-black;
     margin-bottom: 39px;
+    text-transform: uppercase;
 
     @media screen and (width > $tablet-width) {
       font-size: 20px;

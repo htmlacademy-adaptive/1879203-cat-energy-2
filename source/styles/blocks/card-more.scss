@@ -1,5 +1,5 @@
 .card-more {
-  padding: 78px 20px 25px;
+  padding: 84px 0 25px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -10,14 +10,14 @@
 
   background-image: url('../../icons/stack.svg#icon-plus');
   background-repeat: no-repeat;
-  background-position: center 25px;
+  background-position: center 31px;
   background-size: 30px 30px;
 
 
   @media screen and (width > $tablet-width) {
-    padding: 160px 37px 40px;
+    padding: 160px 0 40px;
     border: 2px solid $grey-f2f2f2;
-    min-height: 395px;
+    min-height: 431px;
     align-self: flex-end;
     justify-content: flex-end;
     background-position: center 50px;

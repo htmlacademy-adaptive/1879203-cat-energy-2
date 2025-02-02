@@ -8,7 +8,6 @@
   width: 100%;
   margin: 0 auto;
 
-
   @media screen and (width > $tablet-width) {
     column-gap: 310px;
     padding-block: 60px;
@@ -29,43 +28,52 @@
     gap: 94px;
   }
 
-&__title {
-  font-family: $font-family-oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: $black-111111;
-  text-transform: uppercase;
+  &--program-page {
+    padding-inline: 0px;
 
-  @media screen and (width > $tablet-width) {
-    font-size: 20px;
-    line-height: 26px;
-  }
-}
-
-&__text {
-  font-family: $font-family-lato;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-
-  @media screen and (width > $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
-    color: $base-text-color;
-    justify-self: flex-end;
-    text-align: right;
-  }
-
-  @media screen and (width > $desktop-width) {
-    text-align: left;
-  }
-
-  & span {
-    @media screen and (width > $tablet-width) {
-      display: block;
-      margin-top: 18px;
+    @media screen and (width > $desktop-width) {
+      padding: 65px 81px;
+      padding-right: 76px;
     }
   }
-}
+
+  &__title {
+    font-family: $font-family-oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $black-111111;
+    text-transform: uppercase;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  &__text {
+    font-family: $font-family-lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    @media screen and (width > $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      color: $base-text-color;
+      justify-self: flex-end;
+      text-align: right;
+    }
+
+    @media screen and (width > $desktop-width) {
+      text-align: left;
+    }
+
+    & span {
+      @media screen and (width > $tablet-width) {
+        display: block;
+        margin-top: 18px;
+      }
+    }
+  }
 }

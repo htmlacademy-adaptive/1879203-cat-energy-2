@@ -6,8 +6,14 @@
     padding-block: 57px;
   }
 
-  @media screen and (width > $tablet-width) {
-    padding-block: 77px;
+  @media screen and (width > $desktop-width) {
+    padding-block: 60px;
+  }
+
+  &--program-page {
+    @media screen and (width > $desktop-width) {
+      padding-block: 81px;
+    }
   }
 
   &__wrapper {

@@ -1,6 +1,10 @@
 .catalog-additional {
   overflow-x: hidden;
 
+  @media screen and (width > $tablet-width) {
+    padding-bottom: 37px;
+  }
+
   &__wrapper {
     @media screen and (width > $tablet-width) {
       align-items: normal;
@@ -51,8 +55,8 @@
     }
 
     @media screen and (width > $tablet-width) {
-      margin-bottom: 80px;
-      margin-left: 30px;
+      margin-bottom: 82px;
+      margin-left: 39px;
       font-size: 32px;
       line-height: 32px;
     }
@@ -64,10 +68,11 @@
   }
 
   &__list {
-    margin-bottom: 30px;
+    margin-bottom: 42px;
 
     @media screen and (width > $tablet-width) {
       border: 1px solid $grey-cdcdcd;
+      margin-bottom: 70px;
     }
 
     @media screen and (width > $desktop-width) {
@@ -86,6 +91,10 @@
     text-transform: uppercase;
     background-color: $bg-basic-green;
     width: 100%;
+
+    @media screen and (width > $tablet-width) {
+      margin-top: 12px;
+    }
 
     @media screen and (width > $desktop-width) {
       max-width: 244px;
